@@ -1,5 +1,5 @@
 ---
-title: erste eigener Post
+title: erster eigener Post
 date: 2022-06-28 12:00:00
 categories: [homelab, hardware]
 tags: [servers,dell,hp,supermicro]     # TAG names should always be lowercase
