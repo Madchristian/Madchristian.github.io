@@ -21,9 +21,9 @@ timezone: Europe/Berlin
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: madchristian                          # the main title
+title: Christian Strube                          # the main title
 
-tagline: neue Webseite   # it will display as the sub-title
+tagline: Logbuch   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
