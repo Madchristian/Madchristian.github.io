@@ -30,7 +30,7 @@ Strand von Las Palmas
 ### Mittagessen
 Langsam fühlte es sich etwas flau im Magen an, etwas Nahrung musste her.
 Wir fanden eine nette kleine Location 
->![video_description](https://www.cstrube.de/wp-content/uploads/2022/07/IMG_2249.mov)
+>![]({https://www.cstrube.de/wp-content/uploads/2022/07/IMG_2249.mov})
 
 
 
