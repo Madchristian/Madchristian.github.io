@@ -8,10 +8,10 @@ tags: [urlaub,reisen,condor,fra]     # TAG names should always be lowercase
 # Hier meine ersten Eindrücke der Insel
 
 ## Flughafen
-* Übersichtlich
+* Übersichtliches Gate
+* Technisches Waschbecken von Dyson im Klo
 
 ## Mietwagen
-
 Wir hatten über Cicars einen FIAT 500 reserviert. Als uns der freundliche Herr der Autovermietung mit unseren Koffern sah schlug er uns sofort ein kostenloses Upgrade auf einen OPEL Corsa vor. Nach kurzer Eingewöhungszeit erinnerte ich mich auch an den Sinn des Kupplungspedals.
 
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-0114.jpg)
@@ -31,6 +31,8 @@ Strand von Las Palmas
 Langsam fühlte es sich etwas flau im Magen an, etwas Nahrung musste her.
 Wir fanden eine nette kleine Location 
 >![]({https://www.cstrube.de/wp-content/uploads/2022/07/IMG_2249.mov})
+
+
 
 
 
