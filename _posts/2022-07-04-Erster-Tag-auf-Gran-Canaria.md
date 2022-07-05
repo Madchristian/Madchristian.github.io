@@ -30,7 +30,7 @@ Strand von Las Palmas
 ### Mittagessen
 Langsam fühlte es sich etwas flau im Magen an, etwas Nahrung musste her.
 Wir fanden eine nette kleine Location 
->![]({https://youtu.be/qj57FxjkDsQ})
+>{% youtube "https://youtu.be/qj57FxjkDsQ" %}
 
 
 
