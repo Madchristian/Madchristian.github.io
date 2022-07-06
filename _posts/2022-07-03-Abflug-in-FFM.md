@@ -8,9 +8,9 @@ tags: [urlaub,reisen,condor,fra]     # TAG names should always be lowercase
 # Endlich ist es soweit, der lang ersehnte Urlaub beginnt
 
 Die Koffer sind gepackt, hier eine **kleine** Auswahl was alles mit dabei ist:
-* Kamera
-* Macbook
-* Hose
+* Kameras
+* MacBook Air
+* Klamotten
 
 ![img-description](https://www.cstrube.de/wp-content/uploads/2022/07/IMG_2229-e1656965147992.jpeg)
 Gate A am Flughafen Frankfurt am Main 5:00 Uhr
