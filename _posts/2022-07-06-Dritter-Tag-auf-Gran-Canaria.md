@@ -11,7 +11,7 @@ Der Morgen dieses Dienstags erfüllte uns mit Regen und 15°C Lufttemperatur. Ge
 ## Grillplatz
 Nur etwa 20 Fahrtminuten später durchstießen wir auf etlichen Kurven und Kehren die Wolkendecke. Aber seht selbst:
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-050059.jpg)Wolkendecke von oben
----
+
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-050050.jpg)Grillplatz
 
 ## Roque Nublo 
