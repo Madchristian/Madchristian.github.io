@@ -43,6 +43,9 @@ Santa Brígida
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-0130.jpg)
 El Vinculo
 
+## Eigener Reiseführer
+Als letzten Schritt planten wir unseren nächsten Tag über den Reiseführer der in Apple Maps vorhanden ist.
+
 
 
 
