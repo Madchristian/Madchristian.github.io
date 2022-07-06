@@ -9,6 +9,7 @@ Nach dem Einkauf eininger Lebensmittel frühstückten wir gemütlich und bereite
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-0150-1.jpg)Playa Del Ingles
 
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-0151.jpg)Dünen
+
 ---
 Nach einem langen Strand Spaziergang gönnten wir uns eine Abkühlung im Meer (das Badewannentemperatur hatte).
 >![img_description](https://www.cstrube.de/wp-content/uploads/2022/07/Gran_Canaria-0155.jpg)
