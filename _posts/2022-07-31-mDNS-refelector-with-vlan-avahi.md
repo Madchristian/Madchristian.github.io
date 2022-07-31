@@ -83,7 +83,6 @@ $bash: ip a
     inet6 fe80::ba27:ebff:fe0c:2eef/64 scope link 
        valid_lft forever preferred_lft forever
 ...
-````
-
-
+```
+## Fazit
 Airprint und Airplay funktionieren über getrennte VLAN hinweg.
