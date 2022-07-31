@@ -34,6 +34,7 @@ anschließend für Automatischen Start:
 ```bash
 sudo systemctl enable avahi-daemon
 ```
+## Avahi-Daemon konfigurieren
 sudo nano /etc/avahi/avahi-daemon.conf
 ```conf
 [server]
@@ -52,6 +53,7 @@ enable-reflector=yes
 
 ```
 ---
+## VLAN im Network Interface
 sudo nano /etc/network/interfaces.d/vlans
 ```yml
 # WLAN
