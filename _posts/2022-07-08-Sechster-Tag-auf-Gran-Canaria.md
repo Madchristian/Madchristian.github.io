@@ -1,5 +1,5 @@
 ---
-title: 6. Tag auf Gran Canaria / Der Nord-Westen
+title: sechster Tag auf Gran Canaria / Der Nord-Westen
 date: 2022-07-08 12:00:00
 categories: [Urlaub, Reisen, Gran Canaria, Canon, Agaete]
 tags: [urlaub,reisen,strand,wandern]     # TAG names should always be lowercase
