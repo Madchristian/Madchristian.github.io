@@ -6,7 +6,7 @@ tags: [getränke, party, feier, digital]     # TAG names should always be lowerc
 excalidraw-plugin: parsed
 ---
 
-![img-description](https://cloud.cstrube.de/s/AwNciLqszn6WDw7)
+![img-description](https://images.cstrube.de/web/sonstige/karte.png)
 
 
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
