@@ -5,6 +5,10 @@ categories: [sonstige, test]
 tags: [getränke, party, feier, digital]     # TAG names should always be lowercase
 excalidraw-plugin: parsed
 ---
+
+![img-description](https://cloud.cstrube.de/s/AwNciLqszn6WDw7)
+
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
