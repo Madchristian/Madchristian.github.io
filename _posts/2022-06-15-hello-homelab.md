@@ -44,5 +44,5 @@ sudo apt update && sudo apt upgrade
 
 ## Photos
 
-![img-description](https://pbs.twimg.com/media/FJAFshwXoAEf9HV?format=jpg&name=large)
+![img-description](https://images.cstrube.de/web/pics/public-100.jpg)
 _My Lab_
