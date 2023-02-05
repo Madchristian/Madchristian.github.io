@@ -9,4 +9,8 @@ tags: [servers,homelab,pi,mdns,nginx,webserver]
 
 - test 2
 
-### Mittelgroß
+### code
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build -w -q
+```
