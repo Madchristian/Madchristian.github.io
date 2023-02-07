@@ -6,7 +6,8 @@ tags: [servers,linux,vm,dns]     # TAG names should always be lowercase
 ---
 
 
-> docker-compose.yml {: .prompt-danger }
+> docker-compose.yml
+{: .prompt-danger }
 
 
 ```yaml
