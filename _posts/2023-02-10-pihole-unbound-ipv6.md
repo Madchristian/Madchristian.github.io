@@ -27,12 +27,12 @@ christian@rpi1:~/pihole-unbound$ sudo ip a
     inet6 ::1/128 scope host 
        valid_lft forever preferred_lft forever
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether e4:5f:01:46:ef:ae brd ff:ff:ff:ff:ff:ff
+    link/ether **:**:**:**:**:** brd ff:ff:ff:ff:ff:ff
     inet 10.0.50.10/24 brd 10.0.50.255 scope global eth0
        valid_lft forever preferred_lft forever
     inet6 2a02:8071:50d1:2465:e65f:1ff:fe46:efae/64 scope global dynamic mngtmpaddr noprefixroute 
        valid_lft 86345sec preferred_lft 14345sec
-    inet6 fe80::e65f:1ff:fe46:efae/64 scope link 
+    inet6 fe80::****:***:****:****/64 scope link 
        valid_lft forever preferred_lft forever
 ```
 
@@ -179,7 +179,7 @@ services:
       - PIHOLE_DNS_=127.0.0.1#5335
       - DNSSEC="true"
       - DNSMASQ_LISTENING=single
-      - ServerIPv6="fe80::e65f:1ff:fe46:efae"
+      - ServerIPv6="fe80::***:****:****:****"
     volumes:
       - etc_pihole-unbound:/etc/pihole:rw
       - ./etc_pihole_dnsmasq-unbound:/etc/dnsmasq.d:rw
