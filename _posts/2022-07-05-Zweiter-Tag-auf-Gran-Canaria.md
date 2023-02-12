@@ -6,13 +6,13 @@ tags: [urlaub,reisen,playadelingles]     # TAG names should always be lowercase
 ---
 # Der Süden
 Nach dem Einkauf eininger Lebensmittel frühstückten wir gemütlich und bereiteten uns für den Tag vor. Da der Wetterbericht suggerierte es würde am Ende der Woche heißer werden planten wir den Tag am Playa del Ingles und den dortigen Dünen zu verbringen.
->![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0150-1.jpg)Playa Del Ingles
+![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0150-1.jpg)Playa Del Ingles
 
->![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0151.jpg)Dünen
+![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0151.jpg)Dünen
 
 ---
 Nach einem langen Strand Spaziergang gönnten wir uns eine Abkühlung im Meer (das Badewannentemperatur hatte).
->![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0155.jpg)
+![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0155.jpg)
 Meer
 
 ## Mittagessen
