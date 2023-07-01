@@ -49,11 +49,7 @@ The use of Combine here provides several benefits:
 - **Code readability**: The high-level, declarative syntax of Combine makes the code more readable and easier to understand compared to nested closures or delegate methods.
 - **Integration with Swift UI**: Combine works seamlessly with Swift UI, allowing you to easily update your UI based on the results of network requests.
 
-However, as powerful as Combine is, it also has a steep learning curve and may be overkill for simple asynchronous tasks. In those cases, other methods like `async/await` introduced in Swift 5.5 might be more appropriate. It's always important to choose the right tool for the job!
-
 ---
-
-Continuing from where we left off, let's dig deeper into some of the most useful methods provided by the Combine framework.
 
 ## `map` and `tryMap`
 
