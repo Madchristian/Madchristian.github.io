@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DIRECTORY_TO_OBSERVE="/home/christian/Madchristian.github.io/_posts"      # might want to change this
 BUILD_SCRIPT_LOCATION="/home/christian/Madchristian.github.io"  # the location of your Jekyll build script

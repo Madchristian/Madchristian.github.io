@@ -78,7 +78,7 @@ async def verify_identity_token():
 
     # Token verification logic goes here...
 
-    return await make_response(jsonify({'user_id': user_id, 'jwtToken': jwtToken}), 200)
+    return await make_response(jsonify({'user_id': user_id, 'jwt_token': jwt_token}), 200)
 ```
 
 That's it for this quick look at Quart. The library is a powerful tool for building API endpoints in Python, and it is especially useful when combined with other libraries to handle things like JWT for authentication.
