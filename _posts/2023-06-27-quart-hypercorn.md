@@ -1,6 +1,6 @@
 ---
 Titel: Erstellen einer Webanwendung mit Quart und Hypercorn in Python
-Datum: 2023-01-01
+Datum: 2023-06-27
 Kategorien: [Programming, Python, Quart, Hypercorn]
 Tags: [python, quart, hypercorn, webapp, api]
 ---
