@@ -10,8 +10,10 @@ function block_for_change {
 }
 
 function build {
-  JEKYLL_ENV=production bundle exec jekyll build
+  JEKYLL_ENV=production /home/christian/gems/bin/bundle exec /home/christian/gems/bin/jekyll build
 }
+
+
 
 # First time build
 build
