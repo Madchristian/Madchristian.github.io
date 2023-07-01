@@ -30,7 +30,6 @@ Strand von Las Palmas
 ### Mittagessen
 Langsam fühlte es sich etwas flau im Magen an, etwas Nahrung musste her.
 Wir fanden eine nette kleine Location 
-{% youtube "https://youtu.be/qj57FxjkDsQ" %} für den Mittagssnack.
 
 ## Unterkunft
 Wir haben uns nach langem Suchen für [Albor Suites](https://www.alborsuites.com/) entschieden. Und dies haben wir nicht bereut. Zu dem Anwesen gehört ein Geschmeinschaftspool. Da wir im Moment anscheinend die einzigen Gäste hier sind ist es fast ein Privat Pool. Die Gastgeber sind sehr herzlich und kümmern sich gut um uns.
