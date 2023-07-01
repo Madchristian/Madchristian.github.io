@@ -50,3 +50,62 @@ The use of Combine here provides several benefits:
 - **Integration with Swift UI**: Combine works seamlessly with Swift UI, allowing you to easily update your UI based on the results of network requests.
 
 However, as powerful as Combine is, it also has a steep learning curve and may be overkill for simple asynchronous tasks. In those cases, other methods like `async/await` introduced in Swift 5.5 might be more appropriate. It's always important to choose the right tool for the job!
+
+---
+
+Continuing from where we left off, let's dig deeper into some of the most useful methods provided by the Combine framework.
+
+## `map` and `tryMap`
+
+The `map` function is used to transform the output of a publisher. For example, if you have a publisher that emits integers, you could use `map` to transform them into strings:
+
+```swift
+let intPublisher = Just(5)
+let stringPublisher = intPublisher.map { "The number is \($0)" }
+```
+
+The `tryMap` function is similar, but it can throw errors, allowing you to handle possible failures during the transformation process.
+
+## `filter`
+
+The `filter` function is used to emit only the values that satisfy a given predicate. For example, you could create a publisher that only emits even numbers like this:
+
+```swift
+let numbers = [1, 2, 3, 4, 5, 6].publisher
+let evenNumbers = numbers.filter { $0 % 2 == 0 }
+```
+
+## `combineLatest`
+
+The `combineLatest` function is used when you need to combine the latest values of multiple publishers. It emits a value whenever any of its input publishers emit a value, combining the latest values from each one.
+
+```swift
+let publisher1 = PassthroughSubject<Int, Never>()
+let publisher2 = PassthroughSubject<String, Never>()
+let combined = publisher1.combineLatest(publisher2)
+
+publisher1.send(1)
+publisher2.send("a") // Emits (1, "a")
+publisher1.send(2) // Emits (2, "a")
+publisher2.send("b") // Emits (2, "b")
+```
+
+## `merge`
+
+The `merge` function combines the outputs from multiple publishers into a single publisher. Unlike `combineLatest`, it does not wait for each publisher to emit a value, but emits values as soon as they arrive from any publisher.
+
+## `switchToLatest`
+
+The `switchToLatest` operator is used when you have a publisher of publishers and you want to transform it into a publisher that emits only the latest values from the latest publisher. This is particularly useful when working with asynchronous tasks like network requests.
+
+## `zip`
+
+The `zip` operator combines multiple publishers by pairing their values together. Unlike `combineLatest`, it emits a value only when all of its input publishers have emitted a value.
+
+These are just a few examples of the operators available in the Combine framework. By composing these operators together, you can express complex asynchronous workflows in a clear and concise way.
+
+However, as with any tool, it's important to understand its strengths and limitations. While Combine is extremely powerful for handling asynchronous tasks, it also has a steep learning curve and requires a good understanding of Swift and functional programming concepts. For simpler tasks, other approaches like closures or the new `async/await` syntax introduced in Swift 5.5 might be more suitable.
+
+In the next part of this series, we will explore how to test Combine code and handle common pitfalls. Stay tuned!
+
+---
