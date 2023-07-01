@@ -1,6 +1,6 @@
 ---
 title: Fehlersuche beim Einrichten einer Datenbank-Verbindung in Quart
-date: 2023-07-02 00:00:00 +0100
+date: 2023-07-01 23:00:00 +0100
 categories: [Programming]
 tags: [python, quart, api, development]
 image:
