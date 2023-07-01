@@ -4,16 +4,16 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-"Willkommen auf meiner Website! Mein Name ist Christian Strube und ich bin ein professioneller Serviceberater in der Automobilbranche. Ich habe eine abgeschlossene Ausbildung als Kfz-Techniker und arbeite seit 23 Jahren in der Automobilindustrie. Einige meiner Interessen und Fähigkeiten liegen im IT-Bereich, den ich in meinem Homelab ausleben kann.
+# Christian Strube - Technology, AI and Life
 
-Zu meinen Hobbys gehört die iOS-Entwicklung und ich verfüge über umfangreiche Computerkenntnisse, zu denen Kubernetes, Docker, API-Entwicklung, Python, Clustering, Proxmox, Ceph, Linux, macOS etc. gehöhren.
+Welcome! My name is **Christian Strube**. With more than 23 years of experience in the automotive industry, I am a professional Service Advisor and trained Automotive Technician. I currently work at Senger GmbH & Co. KG, where I offer specialized repair services for Mercedes-Benz cars.
 
-Derzeit arbeite ich bei Senger GmbH & Co. KG, wo ich Reparaturdienste für Mercedes-Benz-Autos anbiete. Wenn Sie mehr über meine Arbeit erfahren oder mich kontaktieren möchten, finden Sie meine Kontaktdaten am Ende dieser Seite. Vielen Dank für Ihren Besuch auf meiner Website!"
+My passion lies in the world of technology. I have extensive knowledge in a variety of IT topics and systems, including **Kubernetes, Docker, API development, Python, clustering, Proxmox, Ceph, Linux, and macOS**.
 
----
+Over the years, I have also developed a particular interest in **Artificial Intelligence (AI)** and am always keen to deepen my knowledge in this area.
 
-"Welcome to my website! My name is Christian Strube, and I am a professional Automotive Service Advisor. I have completed an apprenticeship as an Automotive Technician and have been working in the Automotive Industry for 23 years. Some of my interests and skills include IT, which I indulge in my homelab.
+One of my hobbies is iOS development, and I love pushing the boundaries of technology in my homelab. I view each new project as an opportunity to learn more and further develop my skills.
 
-One of my hobbies is iOS development, and I have extensive computer skills that include Kubernetes, Docker, API development, Python, clustering, Proxmox, Ceph, Linux, macOS etc.
+On this website, I share my insights and experiences from both my professional career in the automotive industry and my personal journey through the world of technology and AI.
 
-I am currently an employee at Senger GmbH & Co. KG, where I offer repair services for Mercedes-Benz cars. If you would like to learn more about my work or contact me, you can find my contact information at the bottom of this page. Thank you for visiting my website!"
+If you have any questions or need further information, please do not hesitate to contact me. You can find the relevant contact details at the bottom of this page. Thank you for visiting!
