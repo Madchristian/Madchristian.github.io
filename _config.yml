@@ -35,7 +35,7 @@ github:
   username: madchristian             # change to your github username
 
 twitter:
-  username: madchristian404            # change to your twitter username
+  username: https://twitter.com/madchristian404            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -44,7 +44,7 @@ social:
   email: christian@cstrube.de            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/madchristian403      # change to your twitter homepage
+    - https://twitter.com/madchristian404      # change to your twitter homepage
     - https://github.com/madchristian       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -80,7 +80,7 @@ theme_mode:    #[light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://pbs.twimg.com/profile_images/1604721326941429760/FQSXubxq_400x400.jpg
@@ -110,10 +110,10 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled:      # boolean, keep empty means false
+    enabled: true   # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env:          # [development|production]
+    env: production     # [development|production]
 
 pwa:
   enabled: true   # the option for PWA feature
