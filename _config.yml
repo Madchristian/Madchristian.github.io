@@ -23,10 +23,10 @@ timezone: Europe/Berlin
 
 title: Christian Strube                          # the main title
 
-tagline: Blog   # it will display as the sub-title
+tagline: Technology, AI and Life  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  Welcome to Christian Strube's blog. Here, complex concepts in technology and Artificial Intelligence (AI) are explained in a simple and understandable way. Explore a range of articles about software development, current technology trends, the exciting world of AI, and its positive impact on our lives and learning.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://Madchristian.github.io'
