@@ -63,7 +63,11 @@ Ersetzen Sie `IHR_BENUTZERNAME` durch Ihren Benutzernamen und `PFAD/ZU/IHREM/JEK
 > CPUQuota=20%, der Dienst darf maximal 20% der Verfügbaren CPU Zeit verbrauchen
 {: .prompt-info }
 
-Schritt 5: Aktivieren Sie den Dienst mit `systemctl enable jekyll.service` und starten Sie ihn mit `systemctl start jekyll.service`. 
+Schritt 5: Aktivieren und starten Sie den Dienst mit 
+```bash
+systemctl enable jekyll.service
+systemctl start jekyll.service
+``` 
 
 **Fehlerbehebung**
 
