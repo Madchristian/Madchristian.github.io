@@ -1,5 +1,5 @@
 ---
-title: Symetrie
+title: Buhnen
 date: 2023-03-13 12:00:00 +0100
 categories: [fotographie]
 tags: [foto,buhnen] # TAG names should always be lowercase
