@@ -10,7 +10,7 @@ image:
 # Einrichtung und Fehlerbehebung eines Lychee-Bilderservers
 
 Lychee ist eine großartige Open-Source-Lösung zur Verwaltung und Organisation Ihrer Fotos. In diesem Beitrag zeige ich Ihnen, wie Sie einen Lychee-Bilderserver einrichten und potenzielle Probleme beheben können.
-
+---
 ## Schritt 1: Systemvoraussetzungen
 
 Um Lychee zu installieren, stellen Sie sicher, dass Ihr Server folgendes vorweist:
@@ -19,7 +19,7 @@ Um Lychee zu installieren, stellen Sie sicher, dass Ihr Server folgendes vorweis
 - Eine Datenbank: MySQL (version > 5.7.8), MariaDB (version > 10.2), PostgreSQL (version > 9.2), oder SQLite3.
 - PHP >= 8.0 mit entsprechenden PHP-Erweiterungen.
 - Imagick-Extension für bessere Thumbnail-Generierung.
-
+---
 ## Schritt 2: Lychee herunterladen und installieren
 
 Beginnen wir mit dem Herunterladen von Lychee. Sie können Lychee direkt von GitHub klonen:
@@ -34,7 +34,7 @@ Wechseln Sie in das Verzeichnis und installieren Sie die erforderlichen Abhängi
 cd Lychee
 composer install --no-dev
 ```
-
+---
 ## Schritt 3: Datenbank konfigurieren
 
 Erstellen Sie eine neue Datenbank für Lychee und behalten Sie die Zugangsdaten bei. Sie benötigen diese, wenn Sie Lychee zum ersten Mal starten.
@@ -47,7 +47,7 @@ GRANT ALL PRIVILEGES ON lychee.* TO 'lychee'@'localhost';
 FLUSH PRIVILEGES;
 exit;
 ```
-
+---
 ## Schritt 4: Nginx-Konfiguration
 
 Hier ist ein einfaches Beispiel für eine Nginx-Konfigurationsdatei:
@@ -79,7 +79,8 @@ server {
 ```
 
 Vergessen Sie nicht, Ihren Domainnamen und den Pfad zu Ihrem Lychee-Verzeichnis zu ändern. Nachdem Sie Ihre Konfigurationsdatei eingerichtet haben, vergewissern Sie sich, dass Nginx und PHP-FPM korrekt konfiguriert sind und laufen.
-Schritt 5: Berechtigungen setzen
+---
+## Schritt 5: Berechtigungen setzen
 
 Vergewissern Sie sich, dass die Berechtigungen für Ihr Lychee-Verzeichnis korrekt gesetzt sind. Sie können dies mit den folgenden Befehlen erreichen:
 
@@ -88,7 +89,7 @@ sudo chown -R www-data:www-data /var/www/Lychee/
 sudo find /var/www/Lychee/ -type d -exec chmod 775 {} \;
 sudo find /var/www/Lychee/ -type f -exec chmod 664 {} \;
 ```
-
+---
 ## Schritt 6: Lychee konfigurieren und nutzen
 
 Öffnen Sie nun Ihren Webbrowser und navigieren Sie zu Ihrer Lychee-Website. Sie werden aufgefordert, eine Datenbank zu erstellen und einen Benutzernamen und ein Passwort zu wählen.
