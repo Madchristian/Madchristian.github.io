@@ -14,9 +14,9 @@ Dieser Beitrag soll Ihnen zeigen, wie Sie Jekyll als einen systemd-Dienst auf ei
 
 **Voraussetzungen**
 
-- Ein Ubuntu-Server
-- Ruby und Bundler installiert
-- Ein Jekyll-Projekt
+- Einen Ubuntu-Server, VM oder LXC-Container
+- Ruby und Bundler installiert [Anleitung](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+- Ein Jekyll-Projekt z.B. nach dieser Vorlage: [jekyll-docs-site @timothystewart6](https://technotim.live/posts/jekyll-docs-site/)
 
 **Konfiguration**
 
@@ -49,9 +49,9 @@ Type=simple
 User=christian
 WorkingDirectory=/home/christian/Madchristian.github.io
 Environment="BUNDLE_PATH=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io/vendor/bundle"
-Environment="GEM_HOME=/home/IHRBENUTZERNAME/.gem/ruby/3.0.0"
+Environment="GEM_HOME=/home/IHR_BENUTZERNAME/.gem/ruby/3.0.0"
 Environment="JEKYLL_ENV=production"
-ExecStart=/bin/bash -lc '/home/christian/gems/bin/bundle exec /home/christian/gems/bin/jekyll build -w'
+ExecStart=/bin/bash -lc '/home/IHR_BENUTERNAME/gems/bin/bundle exec /home/christian/gems/bin/jekyll build -w'
 CPUQuota=20%
 
 [Install]
