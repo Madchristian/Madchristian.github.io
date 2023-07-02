@@ -65,9 +65,10 @@ Ersetzen Sie `IHR_BENUTZERNAME` durch Ihren Benutzernamen und `PFAD/ZU/IHREM/JEK
 
 Schritt 5: Aktivieren und starten Sie den Dienst mit 
 ```bash
-systemctl enable jekyll.service
-systemctl start jekyll.service
-``` 
+sudo systemctl enable jekyll.service
+sudo systemctl start jekyll.service
+```
+
 
 **Fehlerbehebung**
 
