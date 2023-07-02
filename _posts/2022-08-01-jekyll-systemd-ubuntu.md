@@ -47,7 +47,7 @@ After=network.target
 [Service]
 Type=simple
 User=christian
-WorkingDirectory=/home/christian/Madchristian.github.io
+WorkingDirectory=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io
 Environment="BUNDLE_PATH=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io/vendor/bundle"
 Environment="GEM_HOME=/home/IHR_BENUTZERNAME/.gem/ruby/3.0.0"
 Environment="JEKYLL_ENV=production"
@@ -60,7 +60,9 @@ WantedBy=multi-user.target
 
 Ersetzen Sie `IHR_BENUTZERNAME` durch Ihren Benutzernamen und `PFAD/ZU/IHREM/JEKYLL_PROJEKT` durch den tatsächlichen Pfad zu Ihrem Jekyll-Projekt.
 
-> CPUQuota=20%, der Dienst darf maximal 20% der Verfügbaren CPU Zeit verbrauchen
+Ersetzen Sie `GITHUB_USERNAME` durch Ihren GitHub-Benutzernamen.
+
+> CPUQuota=20%, der Dienst darf maximal 20% der Verfügbaren CPU Zeit verbrauchen, dies ist sinnvoll, wenn Sie den Dienst auf einem Raspberry Pi betreiben wollen, damit der Dienst nicht die ganze CPU Zeit verbraucht und andere Dienste nicht mehr reagieren können.
 {: .prompt-info }
 
 Schritt 5: Aktivieren und starten Sie den Dienst mit 
