@@ -48,16 +48,20 @@ After=network.target
 Type=simple
 User=christian
 WorkingDirectory=/home/christian/Madchristian.github.io
-Environment="BUNDLE_PATH=/home/christian/Madchristian.github.io/vendor/bundle"
-Environment="GEM_HOME=/home/christian/.gem/ruby/3.0.0"
+Environment="BUNDLE_PATH=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io/vendor/bundle"
+Environment="GEM_HOME=/home/IHRBENUTZERNAME/.gem/ruby/3.0.0"
 Environment="JEKYLL_ENV=production"
 ExecStart=/bin/bash -lc '/home/christian/gems/bin/bundle exec /home/christian/gems/bin/jekyll build -w'
+CPUQuota=20%
 
 [Install]
 WantedBy=multi-user.target
 ```
 
 Ersetzen Sie `IHR_BENUTZERNAME` durch Ihren Benutzernamen und `PFAD/ZU/IHREM/JEKYLL_PROJEKT` durch den tatsächlichen Pfad zu Ihrem Jekyll-Projekt.
+
+> CPUQuota=20%, der Dienst darf maximal 20% der Verfügbaren CPU Zeit verbrauchen
+{: .prompt-info }
 
 Schritt 5: Aktivieren Sie den Dienst mit `systemctl enable jekyll.service` und starten Sie ihn mit `systemctl start jekyll.service`. 
 
