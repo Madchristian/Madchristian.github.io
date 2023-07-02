@@ -51,7 +51,7 @@ WorkingDirectory=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io
 Environment="BUNDLE_PATH=/home/IHR_BENUTZERNAME/GITHUB_USERNAME.github.io/vendor/bundle"
 Environment="GEM_HOME=/home/IHR_BENUTZERNAME/.gem/ruby/3.0.0"
 Environment="JEKYLL_ENV=production"
-ExecStart=/bin/bash -lc '/home/IHR_BENUTERNAME/gems/bin/bundle exec /home/christian/gems/bin/jekyll build -w'
+ExecStart=/bin/bash -lc '/home/IHR_BENUTERNAME/gems/bin/bundle exec /home/IHR_BENUTERNAME/gems/bin/jekyll build -w'
 CPUQuota=20%
 
 [Install]
