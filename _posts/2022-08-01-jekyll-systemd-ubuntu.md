@@ -73,6 +73,9 @@ Sollten Sie auf Probleme stoßen, überprüfen Sie, ob alle Pfade korrekt sind u
 
 Jetzt sollten Sie eine laufende Jekyll-Instanz auf Ihrem Server haben, die nach einem Systemneustart automatisch wieder gestartet wird. Sie können den Status des Dienstes jederzeit mit `systemctl status jekyll.service` überprüfen. 
 
----
+Um den Dienst du überwachen eignet sich auch wunderbar:
+```bash
+sudo journalctl -u jekyll.service -xe
+```
 
-Hoffentlich hilft Ihnen dieser Blog-Post! Bei weiteren Fragen stehe ich Ihnen gerne zur Verfügung.
+---
