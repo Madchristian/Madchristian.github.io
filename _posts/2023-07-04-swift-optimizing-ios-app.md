@@ -1,6 +1,6 @@
 ---
 title: "Optimizing an iOS Application: Case Study of the Parkplatzmanager App"
-date: 2023-07-04
+date: 2023-07-04 11:45:00 +0200
 categories: ['iOS Development', 'Swift', 'App Optimization']
 tags: ['swift', 'ios', 'asynchronous programming', 'networking', 'app optimization']
 author: "Christian Strube"
