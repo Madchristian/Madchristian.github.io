@@ -1,6 +1,6 @@
 ---
 title: "Improving Location Tracking in an iOS Application: Case Study of the Parkplatzmanager App"
-date: 2023-07-04 18:45:00 +0200
+date: 2023-07-04 16:45:00 +0200
 categories: ['iOS Development', 'Swift', 'App Optimization']
 tags: ['swift', 'ios', 'combine', 'networking', 'app optimization', location tracking]
 author: "Christian Strube"
