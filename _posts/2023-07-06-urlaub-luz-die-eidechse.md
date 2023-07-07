@@ -1,10 +1,10 @@
 ---
-layout: post
 title: "Die leisen Begleiter: Eine Geschichte über Eidechsen am El Teide"
 date: 2023-07-06 18:30:00 +0100
 categories: REISEN TENERIFFA WANDERN TIERE
+tags: [teneriffa, wandern, tiere]
 author: Christian Strube
-image: 
+image:  
     path: https://images.cstrube.de/uploads/original/c5/fc/1833f150dd6e7a27e7041e47769a.webp
     lqip: data:image/jpeg;base64/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcG
 BwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwM
@@ -21,8 +21,6 @@ IhPgmZAZhyHN0lEnIrIsrSKwDFSV3B9nplB2VI1lm8fZJZWgOsV1vhr5SZJN35n7f3Y6Wp4my2Lz
 UbDTqrmRzII2McqlokLEIhJCg/yffVstMy+tfhPKatlMhjJxn5Wn5I0R2lyu9kuOz3dJ1XPNPEeq
 NWtSxRtA5ANdUVgvxbKo2YMx4jdiffUU7BPPwkyG5HrZE1IFPB30WHPwd6uiLJ3Tt4tbnrV9P0eR
 DIXLT1vlfc+v2T/nTx0YOSVlxUuaSAAv/9k=
-
-
 ---
 
 Es gibt viele Dinge, die man auf einer Wanderung um den El Teide erwarten kann - die imposante Landschaft, die duftenden Pinienwälder, das prickelnde Gefühl der Aufregung, während man den vulkanischen Pfaden folgt. Doch es gibt auch Begegnungen, die vielleicht weniger erwartet, aber ebenso faszinierend sind. Heute möchte ich eine solche Geschichte erzählen, die Geschichte unserer kleinen, stillen Begleiter auf dieser Reise - den Eidechsen von Teneriffa.
