@@ -11,21 +11,17 @@ image:
 
 Es gibt viele Dinge, die man auf einer Wanderung um den El Teide erwarten kann - die imposante Landschaft, die duftenden Pinienwälder, das prickelnde Gefühl der Aufregung, während man den vulkanischen Pfaden folgt. Doch es gibt auch Begegnungen, die vielleicht weniger erwartet, aber ebenso faszinierend sind. Heute möchte ich eine solche Geschichte erzählen, die Geschichte unserer kleinen, stillen Begleiter auf dieser Reise - den Eidechsen von Teneriffa.
 
-![Eidechse am El Teide](https://images.cstrube.de/uploads/original/c5/fc/1833f150dd6e7a27e7041e47769a.webp)
-*Eine der vielen Eidechsen, die uns auf unserem Weg begleitet haben*
-
 Die Eidechsen von Teneriffa sind bekannt für ihre Anpassungsfähigkeit und ihre Fähigkeit, in den rauesten Umgebungen zu überleben. Und so trafen wir während unserer Wanderung rund um den El Teide auf unzählige dieser faszinierenden Kreaturen. Sie sonnten sich auf Felsen, huschten über den Pfad und beobachteten uns mit neugierigen Augen.
 
 Eines dieser kleinen Wesen hat einen besonderen Eindruck hinterlassen. Wir nannten sie "Luz", das spanische Wort für Licht. Luz war eine kleine, lebendige Eidechse mit schillernden grünen und blauen Schuppen, die im Sonnenlicht aufblitzten. Sie schien eine besondere Faszination für uns zu haben und folgte uns auf einem großen Teil unseres Weges.
 
-// TODO: embed youtube video
-
+{% include embed/youtube.html id='erSm8SBtvNA' %} 📺 Watch Video
 
 Es war erstaunlich, zu sehen, wie geschickt Luz sich über die felsige Landschaft bewegte, wie sie sich blitzschnell unter Steinen versteckte oder in der Sonne aalte. Sie schien die raue vulkanische Umgebung des El Teide perfekt zu beherrschen. Sie war ein kleiner, lebhafter Kontrast zu der Weite und Stille der Landschaft um uns herum.
 
 Am Ende des Tages, als die Sonne sich zu verabschieden begann und die Schatten der Pinien länger wurden, verloren wir Luz aus den Augen. Doch die Erinnerung an sie und die vielen anderen Eidechsen, die unseren Weg gekreuzt haben, bleibt uns.
 
-![Blick auf La Gomera](https://images.cstrube.de/gallery#XJuKI1mWTxFOCsrsnNlHtc1M/C_u8vJ_0nT4UUn2JYxD3h06H)
+![Blick auf La Gomera](https://images.cstrube.de/uploads/original/09/e2/50fda2729416933e9e85a686be8c.webp)
 *Abschied von einem unvergesslichen Tag*
 
 Die Begegnung mit den Eidechsen am El Teide hat uns daran erinnert, wie unglaublich vielfältig und anpassungsfähig das Leben ist. Sie hat uns gezeigt, dass es oft die kleinen Dinge sind, die eine Reise unvergesslich machen - die leisen Begegnungen, die überraschenden Momente, die lebhaften Farbtupfer in der Landschaft.

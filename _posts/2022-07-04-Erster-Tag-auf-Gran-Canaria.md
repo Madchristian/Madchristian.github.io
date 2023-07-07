@@ -14,7 +14,7 @@ tags: [urlaub,reisen,condor,fra]     # TAG names should always be lowercase
 ## Mietwagen
 Wir hatten über Cicars einen FIAT 500 reserviert. Als uns der freundliche Herr der Autovermietung mit unseren Koffern sah schlug er uns sofort ein kostenloses Upgrade auf einen OPEL Corsa vor. Nach kurzer Eingewöhungszeit erinnerte ich mich auch an den Sinn des Kupplungspedals.
 
-![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0114.jpg)
+![Opel Corsa](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0114.jpg)
 OPEL Corsa von CiCars Gran Canaria
 
 ## Gran Canaria
