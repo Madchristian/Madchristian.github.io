@@ -67,6 +67,7 @@ inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
                 echo "categories: ['category1', 'category2']" >> $mdfile
                 echo "tags: ['tag1', 'tag2']" >> $mdfile
                 echo "author: \"Your Name\"" >> $mdfile
+                echo "---" > $mdfile
             fi
 
             optimized=$dir/${relative_path%.*}_optimized.jpg

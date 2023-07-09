@@ -1,8 +1,9 @@
 ---
+layout: post
 title: "Bergabenteuer in Masca: Ein Ausflug nach Teneriffa"
-date: 2023-07-08 14:42:31 +0000
-categories: ['Reisen', 'Abenteuer']
-tags: ['teneriffa', 'wandern', 'natur', 'masca']
+date: 2023-07-08 08:42:31 +0000
+categories: Reise Abenteuer
+tags: teneriffa wandern natur masca
 author: "Christian Strube"
 image:
   path: https://images.cstrube.de/blog/images/masca-ausflug/Masca-0-blog-cstrube-de.webp
