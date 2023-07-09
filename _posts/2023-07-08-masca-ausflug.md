@@ -48,7 +48,7 @@ RWw1IzjMplxVceSAj45s/dXXWVurrKZYmm/THn1gKTS6hw7ICOufEQ3UvqW766hyy5LWQ21w8cgJ
 aiNaLiJbaSOPbalKq7PuJPz9UOptNVVKYExs+6/3G/fT9I9iZa/GAOwjtz0nuNtnKhzYclmM44iQ
 lDD9eC3wpxfKgokWBwTRrkfFc/aY01uJzmwiuoQDLsYtuyPbBonUkBibIx0yU648+wVS5P5SUtOl
 AvxSlJur/n/enEcJsc4h6SEN8QlI7eMVLQzLgPDEtTmkvqjs4+G42hRH15tKI4AFChxdWT0245Dt
-ANLS9rR//9k=" data-src="[URL-des-echten-Bildes](https://images.cstrube.de/blog/images/masca-ausflug/Masca-1-blog-cstrube-de.webp)" alt="*Christian am Höhepunkt der Wanderung*" class="lazyload">
+ANLS9rR//9k=" data-src="https://images.cstrube.de/blog/images/masca-ausflug/Masca-1-blog-cstrube-de.webp" alt="*Christian am Höhepunkt der Wanderung*" class="lazyload">
 
 
 Am Ende dieses unvergesslichen Tages, als ich auf die Erlebnisse zurückblickte, war ich erfüllt von einer tiefen Dankbarkeit. Nicht nur für die körperliche Herausforderung und die Erreichung des Gipfels, sondern auch für die Möglichkeit, eine so atemberaubende und unberührte Landschaft zu erleben. Masca ist ein Ort, der seine Besucher inspiriert und einen tiefen Eindruck hinterlässt.
