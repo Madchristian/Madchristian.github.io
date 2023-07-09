@@ -15,7 +15,7 @@ Die Eidechsen von Teneriffa sind bekannt für ihre Anpassungsfähigkeit und ihre
 
 Eines dieser kleinen Wesen hat einen besonderen Eindruck hinterlassen. Wir nannten sie "Luz", das spanische Wort für Licht. Luz war eine kleine, lebendige Eidechse mit schillernden grünen und blauen Schuppen, die im Sonnenlicht aufblitzten. Sie schien eine besondere Faszination für uns zu haben und folgte uns auf einem großen Teil unseres Weges.
 
-{% include embed/youtube.html id='erSm8SBtvNA' %} 📺 Watch Video
+{% include embed/youtube.html id='erSm8SBtvNA' %}
 
 Es war erstaunlich, zu sehen, wie geschickt Luz sich über die felsige Landschaft bewegte, wie sie sich blitzschnell unter Steinen versteckte oder in der Sonne aalte. Sie schien die raue vulkanische Umgebung des El Teide perfekt zu beherrschen. Sie war ein kleiner, lebhafter Kontrast zu der Weite und Stille der Landschaft um uns herum.
 
