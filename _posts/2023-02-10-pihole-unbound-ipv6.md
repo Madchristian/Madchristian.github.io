@@ -1,7 +1,7 @@
 ---
 title: Pi-Hole mit Unbound / IPv4 und IPv6
 date: 2023-02-10 22:00:00 +0100
-categories: [homelab,server,DNS,Docker]
+categories: [Homelab,Server,DNS,Docker]
 tags: [servers,docker,linux,pihole,dns]     # TAG names should always be lowercase
 ---
 # Pi-Hole Adblocker in Docker mit Unbound und IPv4 / IPv6

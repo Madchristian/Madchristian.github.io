@@ -1,7 +1,7 @@
 ---
 title: Grundlagen zur Nutzung von Github Teil 1
 date: 2023-07-03 8:00:00 +0100
-categories: [homelab,linux,github]
+categories: [Homelab,Linux,Github]
 tags: [github,git,linux]
 image:
   path: https://images.cstrube.de/uploads/original/e7/4c/a9a3e34aebc4a74df044c95fa6db.webp

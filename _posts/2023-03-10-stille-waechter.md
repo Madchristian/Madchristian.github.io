@@ -1,7 +1,7 @@
 ---
 title: Buhnen
 date: 2023-03-13 12:00:00 +0100
-categories: [fotografie]
+categories: [Fotografie]
 tags: [foto,buhnen] # TAG names should always be lowercase
 image:
   path: https://images.cstrube.de/uploads/original/d8/82/2509c80ad2c8c58d2720497a57c7.jpg

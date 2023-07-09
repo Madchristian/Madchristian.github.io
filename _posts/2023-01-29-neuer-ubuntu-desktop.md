@@ -1,7 +1,8 @@
 ---
+layout: post
 title: Ubuntu VM mit GPU Passthrough
 date: 2023-01-29 09:00:00
-categories: [proxmox, ubuntu, linux, nvidia]
+categories: [Proxmox, Ubuntu, Linux, Nvidia]
 tags: [servers, linux, vm, gpu]     # TAG names should always be lowercase
 ---
 

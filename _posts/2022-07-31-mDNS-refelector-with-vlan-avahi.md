@@ -1,8 +1,8 @@
 ---
 title: mDNS mit VLAN nutzen (zb. Raspberry Pi)
 date: 2022-07-31 15:00:00
-categories: [homelab,raspberry,AVAHI]
-tags: [servers,homelab,pi,mdns,avahi,vlan]
+categories: [Homelab,Raspberry,AVAHI]
+tags: [servers,pi,mdns,vlan]
 ---
 
 # Problem: IOT WLAN / WLAN sind in verschiedenen VLAN
