@@ -2,7 +2,7 @@
 title: "Erstellen von Einladungslinks zur Benutzerauthentifizierung in einer mobilen App"
 date: 2023-07-07 06:45:00 +0100
 categories: ['iOS Development', 'Swift', 'Pyhton']
-tags: ['swift', 'pyhton', 'asynchronous programming', 'networking', 'token']
+tags: ['asynchronous programming', 'networking', 'token']
 author: "Christian Strube"
 image:
     path: https://images.cstrube.de/uploads/original/b1/dc/e5379756d9edc2b88b1b9dd6155d.webp

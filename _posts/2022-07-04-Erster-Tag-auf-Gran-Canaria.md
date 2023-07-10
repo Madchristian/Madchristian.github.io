@@ -1,8 +1,8 @@
 ---
 title: Erste Eindrücke von Gran Canaria
 date: 2022-07-03 12:00:00
-categories: [Urlaub, Reisen, Fliegen, Condor, Gran Canaria, Canon]
-tags: [urlaub,condor,fra]     # TAG names should always be lowercase
+categories: [Urlaub, Reisen, Gran Canaria, Canon]
+tags: [condor,fra]     # TAG names should always be lowercase
 ---
 
 # Hier meine ersten Eindrücke der Insel

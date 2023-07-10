@@ -1,7 +1,7 @@
 ---
 title: Handling Asynchronous Tasks in iOS with Combine
 date: 2023-07-01 11:00:00 +0100
-categories: ['iOS Development']
+categories: ['iOS Development', 'Swift']
 tags: ['combine', 'ios', 'asynchronous', 'networking']   
 image:
   path: https://images.cstrube.de/uploads/original/83/7c/780978b1dcd5d709ad227f0ecd79.webp

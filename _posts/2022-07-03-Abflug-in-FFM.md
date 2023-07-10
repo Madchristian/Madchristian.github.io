@@ -1,8 +1,8 @@
 ---
 title: Abflug nach Gran Canaria am Flughafen Frankfurt am Main
 date: 2022-07-03 06:25:00
-categories: [Urlaub, Reisen, Fliegen, Condor]
-tags: [urlaub,condor,fra]     # TAG names should always be lowercase
+categories: [Urlaub, Reisen, Fliegen]
+tags: [condor,fra]     # TAG names should always be lowercase
 ---
 
 # Endlich ist es soweit, der lang ersehnte Urlaub beginnt

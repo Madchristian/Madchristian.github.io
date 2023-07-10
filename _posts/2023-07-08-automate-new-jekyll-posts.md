@@ -3,7 +3,7 @@ layout: post
 title: Teilautomatisierung der Erstellung neuer Jekyll-Posts
 date: 2023-07-08 00:00:00 +0100
 categories: ['Homelab' , 'Linux' , 'Jekyll' , 'Automation']
-tags: [servers,homelab,nginx,webserver]
+tags: [servers,nginx,webserver]
 author: "Christian Strube"
 image:
   path: https://images.cstrube.de/uploads/original/89/bd/b33eca3371ad2efec9085ca295ca.webp

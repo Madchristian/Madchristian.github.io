@@ -1,8 +1,8 @@
 ---
 title: "Die leisen Begleiter: Eine Geschichte über Eidechsen am El Teide"
 date: 2023-07-06 18:30:00 +0100
-categories: ['Reisen', 'Teneriffa', 'Wandern', 'Tiere']
-tags: ['teneriffa', 'el teide', 'wanderung', 'eidechse', 'tiere']
+categories: ['Reisen', 'Wandern']
+tags: ['teneriffa', 'el teide', 'eidechse', 'tiere']
 author: "Christian Strube"
 image:
   path: https://images.cstrube.de/blog/images/luz-die-eidechse/-3-blog-cstrube-de.webp

@@ -2,8 +2,8 @@
 layout: post
 title: "Blog Update: Automatisierung der Bildoptimierung und WebP-Konvertierung"
 date: 2023-07-09 21:47:49 +0000
-categories: blog
-tags: update blog jekyll bash script webp jpegoptim cwebp base64
+categories: Blog
+tags: update jekyll bash script webp jpegoptim cwebp base64
 author: "Christian Strube"
 image:
   path: https://images.cstrube.de/blog/images/blog-update/blog-update.webp

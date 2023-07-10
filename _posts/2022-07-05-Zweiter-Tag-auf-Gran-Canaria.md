@@ -2,7 +2,7 @@
 title: Zweiter Tag auf Gran Canaria / Strand und Sonne pur
 date: 2022-07-04 12:00:00
 categories: [Urlaub, Reisen, Fliegen, Condor, Gran Canaria, Canon, Maspalomas]
-tags: [urlaub,playadelingles]     # TAG names should always be lowercase
+tags: [playadelingles]     # TAG names should always be lowercase
 ---
 # Der Süden
 Nach dem Einkauf eininger Lebensmittel frühstückten wir gemütlich und bereiteten uns für den Tag vor. Da der Wetterbericht suggerierte es würde am Ende der Woche heißer werden planten wir den Tag am Playa del Ingles und den dortigen Dünen zu verbringen.
