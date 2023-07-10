@@ -2,7 +2,7 @@
 title: pterodactyl Gameserver
 date: 2023-01-27 09:00:00
 categories: [Gameserver]
-tags: [servers, eggs, gameserver]     # TAG names should always be lowercase
+tags: [servers, eggs]     # TAG names should always be lowercase
 ---
 
 # Gameserver

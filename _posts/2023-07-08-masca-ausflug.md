@@ -1,7 +1,7 @@
 ---
 title: "Bergabenteuer in Masca, Ein Ausflug nach Teneriffa"
 date: 2023-07-08 08:42:31 +0000
-categories: Reisen Abenteuer
+categories: Reisen
 tags: teneriffa wandern natur masca
 author: "Christian Strube"
 image:

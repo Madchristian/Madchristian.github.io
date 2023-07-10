@@ -2,7 +2,7 @@
 layout: post
 title: "Ein Besuch im Loro Parque"
 date: 2023-07-07 18:16:34 +0000
-categories: Reisen Tiere
+categories: Reisen
 tags: urlaub loro-parque teneriffa
 author: Christian Strube
 image:

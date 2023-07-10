@@ -1,7 +1,7 @@
 ---
 title: Dritter Tag auf Gran Canaria / Der Wolkenfels
 date: 2022-07-05 12:00:00
-categories: [Urlaub, Reisen, Fliegen, Condor, Gran Canaria, Canon, Roque Nublo]
+categories: [Reisen, Gran Canaria]
 tags: [roquenublo,wandern]     # TAG names should always be lowercase
 ---
 ## Anfahrt

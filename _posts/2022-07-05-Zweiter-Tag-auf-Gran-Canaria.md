@@ -1,7 +1,7 @@
 ---
 title: Zweiter Tag auf Gran Canaria / Strand und Sonne pur
 date: 2022-07-04 12:00:00
-categories: [Urlaub, Reisen, Fliegen, Condor, Gran Canaria, Canon, Maspalomas]
+categories: [Reisen, Gran Canaria]
 tags: [playadelingles]     # TAG names should always be lowercase
 ---
 # Der Süden

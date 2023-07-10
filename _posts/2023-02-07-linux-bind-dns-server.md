@@ -1,8 +1,8 @@
 ---
 title: bind9 DNS Server
 date: 2023-02-07 22:00:00 +0100
-categories: [Homelab,Server,DNS,Linux]
-tags: [servers,vm,dns]     # TAG names should always be lowercase
+categories: [Homelab]
+tags: [servers,vm,dns,linux]     # TAG names should always be lowercase
 ---
 ## Ein eigener DNS-Server mit BIND9 bietet folgende Vorteile:
 

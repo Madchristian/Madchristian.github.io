@@ -1,7 +1,7 @@
 ---
 title: Debugging Network Requests in iOS with Swift
 date: 2023-06-29 12:00:00 +0100
-categories: ['iOS Development']
+categories: [Programming,iOS]
 tags: ['combine', 'ios', 'asynchronous', 'networking']
 image:
   path: https://images.cstrube.de/uploads/original/fc/b8/22305eaf8d4dc54c41834bf16c4b.webp

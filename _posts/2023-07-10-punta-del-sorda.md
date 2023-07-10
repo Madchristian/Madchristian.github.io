@@ -2,7 +2,7 @@
 layout: post
 title: "Wanderung um die Punta del Sorda: Ein Ausflug in das Herz von Teneriffa"
 date: 2023-07-10 13:16:28 +0000
-categories: ['Reisen', 'Abenteuer']
+categories: ['Reisen']
 tags: ['teneriffa', 'wandern', 'natur', 'punta del sorda']
 author: Christian Strube
 image:

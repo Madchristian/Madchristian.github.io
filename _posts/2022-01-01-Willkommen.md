@@ -2,8 +2,8 @@
 layout: post
 title: "Entdecken Sie die Welt von Christian Strube: Reisen, Technologie und künstliche Intelligenz"
 date: 2022-01-01 00:00:00 +0000
-categories: Technologie, KI, Reisen, Lifestyle
-tags: gpt-4, künstliche Intelligenz
+categories: Technologie
+tags: gpt-4 künstliche intelligenz technologie lifestyle
 author: Christian Strube (GPT-4)
 ---
 
