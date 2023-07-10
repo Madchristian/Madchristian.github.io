@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teilautomatisierung der Erstellung neuer Jekyll-Posts
+title: Scripting automate new jekyll-Pposts
 date: 2023-07-08 00:00:00 +0100
 categories: [Programming, Scripting]
 tags: [servers,nginx,webserver,jekyll,automation,scripting,shell,bash]
@@ -9,34 +9,34 @@ image:
   path: https://images.cstrube.de/uploads/original/89/bd/b33eca3371ad2efec9085ca295ca.webp
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/2wBDAQcHBw0MDRgQEBgUDg4OFBQODg4OFBEMDAwMDBERDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPABQDAREAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgMEBgf/xAArEAABAwMBAw0AAAAAAAAAAAACARESAAMEIQUxUQYTFSIjM0FTYnGCodH/xAAYAQEAAwEAAAAAAAAAAAAAAAACAAMEAf/EACQRAAEDAgQHAAAAAAAAAAAAAAEAAhEDEgQiUWETIUFSkrLi/9oADAMBAAIRAxEAPwDL8jbmZiLbW1klbt3EIU3aKK6u4lxrokkgIVC1oBIm5KLlnti2CAOQpiSusVD76lMMdqqDiGaHy+VK6ay25yfbThL1Si8dz0J5StVuaN1Xci4tyzaHJtmAgpwJ0R3XXfwqCQTCFVrXAXGIlDbDCTzF+QflMOfoqODS7vVFPIk0C76Tv4zePvVfRbJzTuv/2Q==
 ---
-Das Skript, das wir entwickelt haben, zielt darauf ab, den Prozess der Erstellung eines neuen Blog-Posts in Jekyll zu automatisieren, insbesondere das Optimieren von Bildern und das Generieren der dazugehörigen Base64-Low-Quality-Image-Placeholders (LQIP).
+This script aims to automate the process of creating a new blog post in Jekyll, specifically optimizing images and generating their associated Base64 Low Quality Image Placeholders (LQIP).
 
-Hier ist ein Überblick über das Skript und seine Funktionen:
+Here's an overview of the script and its functions:
 
-**1. Vorbereitung:**
-Das Skript definiert zunächst die notwendigen Verzeichnisse und stellt sicher, dass sie existieren. Es erstellt sie, wenn sie nicht vorhanden sind.
+**1. Preparation:**
+Initially, the script defines necessary directories and ensures they exist. It creates them if they don't exist.
 
-**2. Beobachtung des Verzeichnisses:**
-Es verwendet `inotifywait`, um das Verzeichnis, in das neue Bilder hochgeladen werden, auf neue Dateien zu überwachen. Es reagiert auf die Ereignisse "create" und "moved_to" und verarbeitet jede neue `.jpg`-Datei, die in das Verzeichnis hinzugefügt wird.
+**2. Directory Monitoring:**
+It uses `inotifywait` to monitor the directory where new images are uploaded for new files. It responds to "create" and "moved_to" events and processes every new `.jpg` file added to the directory.
 
-**3. Post-Erstellung:**
-Für jedes hochgeladene Bild wird ein neuer Blog-Post erstellt, basierend auf dem Verzeichnisnamen des Bildes. Das Skript generiert eine Jekyll-kompatible Markdown-Datei mit Metadaten wie dem Titel, dem Datum, den Kategorien, den Tags und dem Autor. Es erstellt auch ein spezielles `image`-Metadatenfeld, das den Pfad zur Bilddatei und die Base64-Zeichenfolge des LQIP enthält.
+**3. Post Creation:**
+For each uploaded image, a new blog post is created based on the image's directory name. The script generates a Jekyll-compatible markdown file with metadata like title, date, categories, tags, and author. It also creates a special `image` metadata field that contains the path to the image file and the Base64 string of the LQIP.
 
-**4. Bildoptimierung:**
-Jedes Bild wird kopiert und optimiert, um eine kleinere Dateigröße zu erreichen. Danach wird das optimierte Bild in das WebP-Format konvertiert und in ein spezielles Verzeichnis verschoben, auf das der Nginx-Webserver Zugriff hat.
+**4. Image Optimization:**
+Each image is copied and optimized to achieve a smaller file size. After that, the optimized image is converted to the WebP format and moved to a special directory accessible by the Nginx webserver.
 
-**5. Erzeugung von LQIPs:**
-Zusätzlich wird eine niedrigauflösende Version des Bildes erzeugt, in Base64 umgewandelt und in einer Datei gespeichert. Dies wird verwendet, um die LQIPs für den Blog-Post zu erzeugen, die während des Ladens der Seite angezeigt werden, bevor das eigentliche Bild geladen wird.
+**5. LQIP Generation:**
+In addition, a low-resolution version of the image is created, converted to Base64, and stored in a file. This is used to generate the LQIPs for the blog post, which are displayed during the page load before the actual image is loaded.
 
-**6. Räumt auf:**
-Nachdem alle Schritte erfolgreich abgeschlossen wurden, löscht das Skript die temporären und optimierten Bilder.
+**6. Cleanup:**
+After all steps are successfully completed, the script deletes the temporary and optimized images.
 
-**7. Synchronisierung:**
-Schließlich verwendet das Skript `rsync`, um die generierten Base64-Dateien und Blog-Post-Dateien an einen entfernten Server zu übertragen.
+**7. Synchronization:**
+Finally, the script uses `syncthing`, to sync the generated Base64 files and blog post files to a remote server.
 
-Alles in allem dient dieses Skript dazu, den Prozess der Erstellung von Blog-Posts zu optimieren und zu automatisieren. Es reduziert den Aufwand, der mit der manuellen Optimierung von Bildern und der Erstellung von LQIPs verbunden ist, und vereinfacht die Erstellung von Blog-Posts in Jekyll.
+All in all, this script serves to optimize and automate the process of creating blog posts. It reduces the effort associated with manual image optimization and LQIP creation and simplifies the creation of blog posts in Jekyll.
 
-Hier ist das vollständige Skript. Denken Sie daran, dass Sie die Variablen und Pfade an Ihre eigene Umgebung anpassen müssen:
+Here is the full script. Remember that you will need to adjust the variables and paths to suit your own environment:
 
 ```bash
 #!/bin/bash
@@ -109,10 +109,7 @@ inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
 echo "Script Finished." >> /var/log/webp-converter/info.log
 ```
 
-Mit diesem Skript können Sie die Bilder in das `uploads/import`-Verzeichnis hochladen und das Skript überwacht dieses Verzeichnis, um automatisch einen neuen Blog-Post zu erstellen, das Bild zu optimieren und das LQIP zu generieren. 
+With this script, you can upload the images to the `uploads/import` directory and the script monitors this directory to automatically create a new blog post, optimize the image, and generate the LQIP.
 
->Bitte beachten Sie, dass Sie die korrekten Zugangsdaten für Ihren Remote-Server benötigen und dass die Befehle `jpegoptim`, `cwebp` und `convert` (Teil von ImageMagick) auf Ihrem Server installiert sein müssen, damit das Skript funktioniert.
+>Please note that you will need the correct login credentials for your remote server and the `jpegoptim`, `cwebp` and `convert` (part of ImageMagick) commands must be installed on your server for the script to work.
 {: .prompt-info }
-
----
-Dies ist ein leistungsfähiges Skript, das den Prozess der Blog-Post-Erstellung in Jekyll erheblich vereinfacht und verbessert. Es erleichtert den Umgang mit Bildern und verbessert das Laden von Bildern auf Ihrer Website durch die Verwendung von LQIPs.
