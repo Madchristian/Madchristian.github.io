@@ -4,7 +4,6 @@ date: 2022-07-04 12:00:00
 categories: [Reisen, Gran Canaria]
 tags: [playadelingles]     # TAG names should always be lowercase
 ---
-# Der Süden
 Nach dem Einkauf eininger Lebensmittel frühstückten wir gemütlich und bereiteten uns für den Tag vor. Da der Wetterbericht suggerierte es würde am Ende der Woche heißer werden planten wir den Tag am Playa del Ingles und den dortigen Dünen zu verbringen.
 ![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-0150-1.jpg)Playa Del Ingles
 

@@ -5,8 +5,6 @@ categories: [Reisen, Gran Canaria]
 tags: [condor,fra]     # TAG names should always be lowercase
 ---
 
-# Hier meine ersten Eindrücke der Insel
-
 ## Flughafen
 * Übersichtliches Gate
 * Technisches Waschbecken von Dyson im Klo

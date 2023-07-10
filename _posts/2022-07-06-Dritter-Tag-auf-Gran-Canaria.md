@@ -4,7 +4,6 @@ date: 2022-07-05 12:00:00
 categories: [Reisen, Gran Canaria]
 tags: [roquenublo,wandern]     # TAG names should always be lowercase
 ---
-## Anfahrt
 Der Morgen dieses Dienstags erfüllte uns mit Regen und 15°C Lufttemperatur. Geplant hatten wir uns den "Wolkenfels" anzusehen, also starteten wir gegen 9:30 Uhr mit dem Auto in Richtung Tejeda. Unterwegs ließen wir es uns nicht nehmen ein paar Bilder des Panorama zu machen.
 ![img_description](https://images.cstrube.de/web/blog/grancanaria/Gran_Canaria-050065.jpg)Wolkendecke
 

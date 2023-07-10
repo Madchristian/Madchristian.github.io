@@ -5,8 +5,6 @@ categories: [Homelab]
 tags: [servers,pi,mdns,vlan,avahi,raspberry]
 ---
 
-# Problem: IOT WLAN / WLAN sind in verschiedenen VLAN
-
 - Apple Airprint geht nicht
 - Zugriff auf Drucker und Apple Airplay nicht möglich
 - Omada SDN kann (noch) kein mDNS Refelector
