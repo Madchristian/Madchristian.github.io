@@ -40,20 +40,24 @@ Hier ist das vollständige Skript. Denken Sie daran, dass Sie die Variablen und 
 
 ```bash
 #!/bin/bash
-dir=/var/www/Lychee/public/uploads/import
-base64dir=$dir/base64
-imagedir=/var/www/public/blog/images
-postsdir=/home/user/posts
-remote_dir=user@ip-webserver:~/newpost
-
+dir=/path/to/import
+base64dir=$dir/path/to/base64
+imagedir=/path/to/public/images
+postsdir=/path/to/posts
+remote_dir=user@jekyll-server:~/path/to/newposts
+echo "Script started." > /var/log/webp-converter/info.log
 mkdir -p $base64dir $imagedir $postsdir || { echo "Failed to create directories"; exit 1; }
+
+image_count=0
+echo "Image count is now $image_count" >> /var/log/webp-converter/info.log
 
 inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
     while read file; do
+	echo "New File detected: $file" >> /var/log/webp-converter/info.log
         relative_path=${file#$dir/}
-        if [[ $file =~ .jpg$ ]] && [[ $file != *_optimized.jpg ]]; then
-            echo "Processing $file..."
-
+        if [[ $file =~ .jpg$ ]] && [[ $file != *_optimized.jpg ]] && [[ $file != .* ]]; then
+            echo "Processing $file..." >> /var/log/webp-converter/info.log
+		
             postname=$(basename $(dirname $file))
             filename=$(basename $file .jpg)
 
@@ -61,37 +65,48 @@ inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
             mkdir -p $postdir || { echo "Failed to create directory $postdir"; continue; }
 
             mdfile=$postsdir/$(date +'%Y-%m-%d')-${postname}.md
-            if [[ ! -e $mdfile ]]; then
-                echo "---" > $mdfile || { echo "Failed to create $mdfile"; continue; }
-                echo "title: \"Title Here\"" >> $mdfile
-                echo "date: $(date +'%Y-%m-%d %H:%M:%S %z')" >> $mdfile
-                echo "categories: ['category1', 'category2']" >> $mdfile
-                echo "tags: ['tag1', 'tag2']" >> $mdfile
-                echo "author: \"Your Name\"" >> $mdfile
-                echo "---" > $mdfile
-            fi
 
             optimized=$dir/${relative_path%.*}_optimized.jpg
             rsync -avP $file $optimized || { echo "Failed to copy $file"; continue; }
             jpegoptim -s $optimized || { echo "Failed to optimize $file"; continue; }
+
             webp=$postdir/${filename}.webp
             cwebp -q 80 $optimized -o $webp || { echo "Failed to convert $file to WebP"; continue; }
 
             base64file=$base64dir/${filename}_optimized.base64
-            convert $optimized -resize 20 - | base64 > $base64file || { echo "Failed to convert $file to Base64"; continue; }
+            convert $optimized -resize 20 - | base64 | tr -d '\n' > $base64file || { echo "Failed to convert $file to Base64"; continue; }
 
-            image_path="https://images.example.com/blog/images/$postname/${filename}.webp"
+            image_path="https://images.example.com/blog/$postname/${filename}.webp"
             base64_string=$(cat $base64file)
-            echo "image:" >> $mdfile || { echo "Failed to write to $mdfile"; continue; }
-            echo "  path: $image_path" >> $mdfile
-            echo "  lqip: data:image/jpeg;base64,$base64_string" >> $mdfile
 
+            image_count=$(grep -c "image:" $mdfile)
+		echo "Image count is now $image_count" >> /var/log/webp-converter/info.log
+            if [[ $image_count -eq 0 ]]; then
+		echo "Writing header to $mdfile" >> /var/log/webp-converter/info.log
+                echo "---" > $mdfile || { echo "Failed to create $mdfile"; continue; }
+                echo "layout: post" >> $mdfile
+		echo "title: \"Title Here\"" >> $mdfile
+                echo "date: $(date +'%Y-%m-%d %H:%M:%S %z')" >> $mdfile
+                echo "categories: category1 category2" >> $mdfile
+                echo "tags: tag1 tag2" >> $mdfile
+                echo "author: "Christian Strube"" >> $mdfile
+                echo "image:" >> $mdfile || { echo "Failed to write to $mdfile"; continue; }
+                echo "  path: $image_path" >> $mdfile
+                echo "  lqip: data:image/jpeg;base64,$base64_string" >> $mdfile
+		        echo "---" >> $mdfile	
+		((image_count++))
+                echo "Image count is now $image_count" >> /var/log/webp-converter/info.log
+	    else
+		echo "Writing image link to $mdfile" >> /var/log/webp-converter/info.log
+                echo "![$filename!]($image_path){: w=\"338\" h=\"600\" lqip=\"data:image/jpeg;base64,$base64_string\" }" >> $mdfile
+            fi
+		echo "Finished processing $file" >> /var/log/webp-converter/info.log
             [ -e "$optimized" ] && rm $optimized
-            rsync -az -e 'ssh -o StrictHostKeyChecking=no' --delete $base64dir/ $remote_dir/ || { echo "Failed to rsync $base64dir/ to $remote_dir/"; continue; }
-            rsync -az -e 'ssh -o StrictHostKeyChecking=no' --delete $postsdir/ $remote_dir/ || { echo "Failed to rsync $postsdir/ to $remote_dir/"; continue; }
-            echo "$file processed successfully"
+
+	     echo "$file processed successfully"
         fi
     done
+echo "Script Finished." >> /var/log/webp-converter/info.log
 ```
 
 Mit diesem Skript können Sie die Bilder in das `uploads/import`-Verzeichnis hochladen und das Skript überwacht dieses Verzeichnis, um automatisch einen neuen Blog-Post zu erstellen, das Bild zu optimieren und das LQIP zu generieren. 
