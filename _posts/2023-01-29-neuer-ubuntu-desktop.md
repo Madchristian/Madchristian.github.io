@@ -2,8 +2,8 @@
 layout: post
 title: Ubuntu VM mit GPU Passthrough
 date: 2023-01-29 09:00:00
-categories: [Proxmox]
-tags: [servers, vm, gpu]     # TAG names should always be lowercase
+categories: [Homelab, VMs]
+tags: [servers, vm, gpu, ubuntu]     # TAG names should always be lowercase
 author: Christian Strube
 ---
 
