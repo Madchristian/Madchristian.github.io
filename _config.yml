@@ -89,10 +89,10 @@ avatar: https://images.cstrube.de/blog/images/mein-avatar/christian_space.webp
 toc: true
 
 comments:
-  active: utterances # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: disqus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: blog-nx4s6rjSkZ   # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo: madchristian/madchristian.github.io        # <gh-username>/<repo>
