@@ -1,6 +1,6 @@
 ---
 title: Vierter Tag auf Gran Canaria / Caldera de Bandama
-date: 2022-07-06 12:00:00
+date: 2022-07-06 19:00:00
 categories: [Reisen, Gran Canaria]
 tags: [caldera,wandern,bandama]     # TAG names should always be lowercase
 ---

@@ -1,6 +1,6 @@
 ---
 title: Zweiter Tag auf Gran Canaria / Strand und Sonne pur
-date: 2022-07-04 12:00:00
+date: 2022-07-04 19:00:00
 categories: [Reisen, Gran Canaria]
 tags: [playadelingles]     # TAG names should always be lowercase
 ---

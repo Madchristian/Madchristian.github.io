@@ -88,7 +88,6 @@ inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
                 echo "date: $(date +'%Y-%m-%d %H:%M:%S %z')" >> $mdfile
                 echo "categories: category1 category2" >> $mdfile
                 echo "tags: tag1 tag2" >> $mdfile
-                echo "author: "Christian Strube"" >> $mdfile
                 echo "image:" >> $mdfile || { echo "Failed to write to $mdfile"; continue; }
                 echo "  path: $image_path" >> $mdfile
                 echo "  lqip: data:image/jpeg;base64,$base64_string" >> $mdfile
@@ -97,7 +96,7 @@ inotifywait -m $dir -e create -e moved_to --format '%w%f' -r |
                 echo "Image count is now $image_count" >> /var/log/webp-converter/info.log
 	    else
 		echo "Writing image link to $mdfile" >> /var/log/webp-converter/info.log
-                echo "![$filename!]($image_path){: w=\"338\" h=\"600\" lqip=\"data:image/jpeg;base64,$base64_string\" }" >> $mdfile
+                echo "![$filename!]($image_path){: w=\"800\" h=\"600\" lqip=\"data:image/jpeg;base64,$base64_string\" }" >> $mdfile
             fi
 		echo "Finished processing $file" >> /var/log/webp-converter/info.log
             [ -e "$optimized" ] && rm $optimized

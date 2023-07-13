@@ -1,6 +1,6 @@
 ---
 title: Fünfter Tag auf Gran Canaria / Nationalpark Tamadaba
-date: 2022-07-07 12:00:00
+date: 2022-07-07 19:00:00
 categories: [Reisen, Gran Canaria]
 tags: [tamadaba,wandern,tambada]
 image:

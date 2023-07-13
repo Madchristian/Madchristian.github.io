@@ -1,7 +1,7 @@
 ---
 layout: post
 title: sechster Tag auf Gran Canaria / Der Nord-Westen
-date: 2022-07-08 12:00:00
+date: 2022-07-08 19:00:00
 categories: [Reisen,Gran Canaria]
 tags: [strand,wandern,agate]
 image:

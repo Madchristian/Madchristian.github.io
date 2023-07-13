@@ -1,6 +1,6 @@
 ---
 title: Erste Eindrücke von Gran Canaria
-date: 2022-07-03 12:00:00
+date: 2022-07-03 19:00:00
 categories: [Reisen, Gran Canaria]
 tags: [condor,fra]     # TAG names should always be lowercase
 ---
