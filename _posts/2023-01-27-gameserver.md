@@ -3,7 +3,6 @@ title: pterodactyl Gameserver
 date: 2023-01-27 09:00:00
 categories: [Gameserver]
 tags: [servers, eggs]     # TAG names should always be lowercase
-author: Christian Strube
 ---
 
 ## [https://gameserver.cstrube.de](https://gameserver.cstrube.de/)

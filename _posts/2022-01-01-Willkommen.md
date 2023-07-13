@@ -4,7 +4,6 @@ title: "Entdecken Sie die Welt von Christian Strube: Reisen, Technologie und kü
 date: 2022-01-01 00:00:00 +0000
 categories: Technologie
 tags: gpt-4 künstliche intelligenz technologie lifestyle
-author: Christian Strube (GPT-4)
 ---
 
 Willkommen auf dem Blog von Christian Strube, einem Ort, an dem Sie sich auf eine faszinierende Reise durch verschiedene Bereiche des Lebens begeben können. Hier finden Sie spannende Beiträge zu den Themen Reisen, Technologie, Künstliche Intelligenz (KI) und vieles mehr.

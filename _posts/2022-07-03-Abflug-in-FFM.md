@@ -4,7 +4,6 @@ title: Abflug nach Gran Canaria am Flughafen Frankfurt am Main
 date: 2022-07-03 06:25:00
 categories: [Reisen, Fliegen]
 tags: [condor,fra]
-author: Christian Strube
 ---
 
 Die Koffer sind gepackt, hier eine **kleine** Auswahl was alles mit dabei ist:
