@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scripting automate new jekyll-Pposts
+title: Scripting automate new jekyll-posts
 date: 2023-07-08 00:00:00 +0100
 categories: [Programming, Scripting]
 tags: [servers,nginx,webserver,jekyll,automation,scripting,shell,bash]
