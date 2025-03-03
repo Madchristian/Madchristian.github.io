@@ -68,9 +68,9 @@ Bleiben Sie dran für weitere Updates und Verbesserungen der ACCPromAdapter App!
 
 ---
 
-#English Version:
+# English Version:
 
-## 📝 Description
+## Description
 
 ACCPromAdapter is an innovative macOS menu bar application designed to monitor the Apple Content Cache metrics and provide them in a Prometheus-compatible format. The app reads the Metrics.db file from the system directory and serves the data via an integrated HTTP server, allowing administrators and DevOps teams to seamlessly visualize the caching infrastructure in tools such as Grafana.
 
