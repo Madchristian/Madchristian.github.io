@@ -8,6 +8,12 @@ image:
   path: https://images.cstrube.de/blog/images/swift-ACCpromAdapter-App/0001-swift-ACCpromAdapter-App-79b055b2-5fc7-4710-bdbd-b0a008886c4d.webp
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAgMDAwMDBAcFBAQEBAkGBwUHCgkLCwoJCgoMDREODAwQDAoKDhQPEBESExMTCw4UFhQSFhESExL/2wBDAQMDAwQEBAgFBQgSDAoMEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhL/wAARCAALABQDAREAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAgFBgf/xAAkEAACAgIBBAIDAQAAAAAAAAABAgMEBREGABIhMRNhB0Fxkf/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBQQG/8QAJREAAgEDAwQCAwAAAAAAAAAAAQIRAAMhBAVREiIxQRNhgZHR/9oADAMBAAIRAxEAPwBOPx5wObkLyyVo61GukDzRz5KQQRsVGwgZvZbet+h7J6v9pkA1w+6bmmjROsFixAhQTE+/xW2YSHgvC8XUfmmawVbIySuZoVAtiWsyKyNCY9qJQQ66bwdg78ecGpsXHJ6Tj9Z/lDt+8Ev2actH1A4zPGDVI5FyLjOcykl7G1RVqT+YIplX5AmyF7u0a7ta3rp+jsMtkBzJrfqrjm6Sojxgcxmlul5Tl8iCl/I2rIkUBvlk7zofrZ9D66YltFwoir91i4ljPupPFXJqkqSVnMToCqsoAKgjyB/dn/eiGPFTr1tXBDCRRT5O1F2pFYkRFXSqp0AProuo80r4kOSK/9k=
 ---
+# ACCpromAdapter
+
+**Version:** 1.0  
+**Author:** Christian Strube  
+**License:** MIT
+---
 
 Die [**ACCPromAdapter App**](https://github.com/Madchristian/ACCpromAdapter) ist eine innovative macOS-Anwendung, die speziell dafür entwickelt wurde, die Metriken des Apple Content Cache zu überwachen und in einem Prometheus-kompatiblen Format bereitzustellen. Dank ihrer flexiblen Architektur können Administratoren und DevOps-Teams die Caching-Infrastruktur bequem visualisieren – etwa in Grafana. Zusätzlich bieten wir mit dem **ACCPromAdapterDaemon** eine Lösung für headless Installationen an, bei denen der Dienst automatisch beim Systemstart aktiv ist und Metriken auch ohne Benutzeranmeldung sammelt.
 
@@ -59,3 +65,99 @@ Bleiben Sie dran für weitere Updates und Verbesserungen der ACCPromAdapter App!
 ---
 
 *Für Fragen und Feedback stehe ich Ihnen jederzeit zur Verfügung – kontaktieren Sie mich über [GitHub](https://github.com/MadChristian) oder per E-Mail.*
+
+---
+
+#English Version:
+
+## 📝 Description
+
+ACCPromAdapter is an innovative macOS menu bar application designed to monitor the Apple Content Cache metrics and provide them in a Prometheus-compatible format. The app reads the Metrics.db file from the system directory and serves the data via an integrated HTTP server, allowing administrators and DevOps teams to seamlessly visualize the caching infrastructure in tools such as Grafana.
+
+In addition, we offer the **ACCPromAdapterDaemon** for headless installations. This daemon is ideal for server environments and headless Mac Minis where the service automatically starts at system boot and collects metrics even without a user login.
+
+---
+
+## What is ACCPromAdapter?
+
+ACCPromAdapter connects to the Apple Content Cache and reads the metrics from its associated Metrics.db file. The app intelligently determines whether to retrieve the metrics from an externally running daemon (HTTP server) or by directly accessing the local database. This dual approach ensures that current data is always available, regardless of whether the external service is operational.
+
+---
+
+## Key Features
+
+- **Automatic Environment Detection:** On startup, the app checks if an external HTTP daemon is active to provide metrics. If so, these metrics are used; otherwise, the app falls back to the local Metrics.db.
+- **Prometheus-Compatible Output:** The metrics are output in a format that can be directly scraped by Prometheus, enabling seamless integration into Grafana dashboards.
+- **User-Friendly Menu Bar Interface:** A clear UI in the macOS menu bar displays the key metrics, complemented by a visual status indicator showing the active mode (external or local).
+- **Automatic Updates:** Metrics are refreshed every 30 seconds, with a progress bar visually indicating the current update cycle.
+- **Headless Installation with ACCPromAdapterDaemon:** For environments without user interaction—such as servers or headless Mac Minis—the ACCPromAdapterDaemon provides a fully automated solution. The daemon starts at system boot and continuously serves metrics that Prometheus can scrape.
+
+---
+
+## Technical Architecture
+
+The app is written in **Swift** and leverages modern technologies such as Swift Concurrency (`async/await`), Combine, and SwiftNIO for network communication. It employs a modular architecture:
+
+- **AppInitializer:** Handles the central initialization of the application and determines whether to use external HTTP metrics or the local database.
+- **MetricsCache:** Collects and updates metrics from the local database if no external daemon is available.
+- **MetricsFetcher:** Retrieves metrics over HTTP when an external daemon is active.
+- **PrometheusServer:** Launches an internal HTTP server that delivers Prometheus-compatible output as a fallback when no external service is present.
+- **ACCPromAdapterDaemon:** A separate daemon designed specifically for headless installations. It runs system-wide, gathers metrics from Metrics.db, and exposes them via an HTTP endpoint without requiring a user login.
+
+---
+
+## Use Cases
+
+ACCPromAdapter is ideal for:
+
+- **Administrators and IT Teams** who need to monitor the performance and load of their Apple Content Cache.
+- **DevOps Teams** who wish to build Grafana dashboards for real-time metrics visualization.
+- **Headless Environments** where the ACCPromAdapterDaemon ensures continuous metrics collection even without user interaction.
+
+---
+
+## Installation & Getting Started
+
+**ACCPromAdapter App:**
+1. **Clone the Project:**
+   ```bash
+   git clone https://github.com/MadChristian/ACCpromAdapter.git
+   cd ACCpromAdapter
+   ```
+2. **Open in Xcode:** 
+   ```bash
+   open ACCpromAdapter.xcodeproj
+   ```
+
+3.	Set Up Code Signing:
+	- In Xcode, navigate to “Signing & Capabilities” and enter your Developer ID as required.
+4.	Run the App:
+	- Press Cmd + R to build and launch the app.
+5.	Initial Configuration:
+	- On first launch, you will be prompted to select the Metrics.db file to configure read access.
+---
+ACCPromAdapterDaemon (Optional):
+- Download the installation package ACCPromAdapterDaemon.pkg from GitHub Releases or as a direct download on the blog.
+- Install the daemon, which will automatically start at system boot.
+
+Monitoring:
+- Launch the app and monitor the metrics in the menu bar. If the external daemon is active, metrics will be retrieved via HTTP.
+
+Grafana Integration:
+- Configure Prometheus to scrape metrics from:
+
+http://localhost:9200/metrics
+
+Then, create a suitable dashboard in Grafana.
+
+Conclusion
+
+ACCPromAdapter and the ACCPromAdapterDaemon together provide a flexible and robust solution for monitoring Apple Content Cache metrics. With a dual strategy—retrieving metrics via an external HTTP daemon or directly from the local database—this innovative tool ensures that up-to-date and reliable data is always available. This empowers you to optimally monitor your caching infrastructure and identify potential issues early on.
+
+Stay tuned for further updates and improvements to the ACCPromAdapter App!
+
+Deployment
+
+The latest version of the ACCpromAdapter App and the daemon is available as a release. Visit the Releases Page to download the installation package.
+
+For any questions or feedback, please contact me via GitHub or by email.
