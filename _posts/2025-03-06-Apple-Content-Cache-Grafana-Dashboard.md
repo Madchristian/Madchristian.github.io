@@ -15,7 +15,7 @@ image:
 
 This guide will walk you through the process of setting up a Grafana + Prometheus monitoring stack to track the performance of Apple’s Content Caching service. You’ll learn how to download and install a .pkg file from my GitHub repository, configure the necessary files, and seamlessly import a pre-built Grafana dashboard to visualize key metrics.
 
-Why Monitor Apple’s Content Caching?
+#### Why Monitor Apple’s Content Caching?
 
 Apple’s Content Caching optimizes network performance by storing and serving software updates, apps, and other Apple content locally. This reduces bandwidth usage, speeds up downloads, and enhances efficiency across multiple devices. However, ensuring the cache is performing optimally requires proper monitoring—especially in larger environments, where issues like bandwidth bottlenecks or cache misses can impact performance.
 
@@ -24,7 +24,7 @@ How Does This Monitoring Stack Work?
 	•	Prometheus scrapes these metrics and stores them for analysis.
 	•	Grafana visualizes this data, providing insights into cache performance, bandwidth savings, and potential issues.
 
-Requirements & Deployment Recommendations
+#### Requirements & Deployment Recommendations
 
 To run the Apple Content Cache, a Mac is required, as this feature is exclusive to macOS.
 
@@ -101,6 +101,10 @@ volumes:
   grafana-data:
 ```
 
+We use the latest versions of Prometheus, Alertmanager, and Grafana in this configuration. You can replace `latest` with a specific version if needed. With Retention time set to 90 days, you can adjust this value as needed. Also, you can uncomment the `grafana.ini` line if you want to use a custom configuration file. And we use Docker Volume for Prometheus and Grafana data to persist the data.
+
+### 3.  Configure Prometheus to Scrape Metrics from the Apple Content Cache
+
 Create a new directory named `prometheus` and a new file named `prometheus.yml` inside it:
 
 ```bash
@@ -146,6 +150,8 @@ scrape_configs:
       labels:
         group: 'apple-content-cache'
         location: 'datacenter-1'
+        hostname: 'apple-content-cache-1'
+        vlan-id: '100'
   
   - job_name: 'more-content-caches'
     scrape_interval: 60s
@@ -154,7 +160,11 @@ scrape_configs:
       labels:
         group: 'apple-content-cache'
         location: 'datacenter-2'
+        hostname: 'apple-content-cache-2'
+        vlan-id: '200'
 ```
+
+Replace `insert_IP_apple_content_cache` with the IP address of your Apple Content Cache server. Feel free to add more content caches by duplicating the `more-content-caches` job and updating the IP address and add more labels as needed.
 
 Create a file named `alerts.yml` in the same directory and paste the following configuration:
 
@@ -186,7 +196,7 @@ docker-compose up -d
 
 You should see the Prometheus, Alertmanager, and Grafana containers starting up.
 
-### 3. Configure Prometheus to Scrape Metrics from the Apple Content Cache
+### 4. Configure Prometheus to Scrape Metrics from the Apple Content Cache
 
 Now, let’s configure Prometheus to scrape metrics from the Apple Content Cache. 
 First, add the prometheus data source to Grafana:
@@ -215,7 +225,7 @@ Next, import the pre-built Grafana dashboard for the Apple Content Cache:
 
 That’s it! You now have a fully functional monitoring stack to visualize metrics from the Apple Content Cache in Grafana.
 
-### Conclusion
+### 5. Conclusion
 
 In this guide, we walked you through how to download and install a .pkg file from a GitHub repository, set up a Prometheus + Grafana monitoring stack using Docker Compose, configure the necessary files, and import a pre-built Grafana dashboard for the Apple Content Cache.
 
