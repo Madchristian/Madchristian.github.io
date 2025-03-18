@@ -1,8 +1,8 @@
 ---
 title: "Improving Location Tracking in an iOS Application: Case Study of the Parkplatzmanager App"
 date: 2023-07-04 16:45:00 +0200
-categories: ['Programming', 'iOS']
-tags: ['ios', 'combine', 'networking', 'app optimization', location tracking, 'swiftui', 'swift', 'case study', 'parkplatzmanager']
+categories: ['Programming', 'Swift']
+tags: ['ios', 'combine', 'networking', 'app optimization', location tracking, 'swiftui', 'case study', 'parkplatzmanager']
 image:
   path: https://images.cstrube.de/uploads/original/c4/85/426ac01432c4f36c3efe6e42c7d7.webp
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/2wBDAQcHBw0MDRgQEBgUDg4OFBQODg4OFBEMDAwMDBERDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPABQDAREAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAgMEBgf/xAArEAABAwMBAw0AAAAAAAAAAAACARESAAMEIQUxUQYTFSIjM0FTYnGCodH/xAAYAQEAAwEAAAAAAAAAAAAAAAACAAMEAf/EACQRAAEDAgQHAAAAAAAAAAAAAAEAAhEDEgQiUWETIUFSkrLi/9oADAMBAAIRAxEAPwDL8jbmZiLbW1klbt3EIU3aKK6u4lxrokkgIVC1oBIm5KLlnti2CAOQpiSusVD76lMMdqqDiGaHy+VK6ay25yfbThL1Si8dz0J5StVuaN1Xci4tyzaHJtmAgpwJ0R3XXfwqCQTCFVrXAXGIlDbDCTzF+QflMOfoqODS7vVFPIk0C76Tv4zePvVfRbJzTuv/2Q==

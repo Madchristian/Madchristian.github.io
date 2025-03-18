@@ -2,8 +2,8 @@
 layout: post
 title: "Apple Content Cache mit Grafana und Prometheus überwachen – Schritt-für-Schritt-Anleitung"
 date: 2025-03-06 16:52:26 +0100
-categories: [Grafana,Apple,Content-Cache,Dashboard,Monitoring,Prometheus]
-tags: [grafana,apple,content-cache,dashboard,monitoring,prometheus]
+categories: [Grafana,Apple,Prometheus]
+tags: [content-cache,dashboard,monitoring]
 image:
   path: https://images.cstrube.de/blog/images/Apple-Content-Cache-Grafana-Dashboard/0001-Apple-Content-Cache-Grafana-Dashboard-96c062b0-a057-408f-a5ea-73f9c4a50133.webp
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAkACQAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFCf/EACQQAAICAgAEBwAAAAAAAAAAAAECAwQAERIhMWFBU4GRodHS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGREAAgMBAAAAAAAAAAAAAAAAABEC8PES/9oADAMBAAIRAxEAPwDHqetHHc4XJ1wg7WMsenfGTVhHXiIkYoXIAaLmPTpint2BM6l1YBeRMSkj4xItTxlSrIeN9kGFCN+3bNlO4CKAq1HRWFm3rXkD9YZKmu2El0DGeXjAn1hhzO4Sj//Z

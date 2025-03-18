@@ -2,7 +2,7 @@
 layout: post
 title: "Parken App Updates 0.0.5"
 date: 2023-07-30 22:23:49 +0000
-categories: swift app
+categories: Swift App
 tags: swiftui iOS app backend
 image:
   path: https://images.cstrube.de/blog/images/swift-parken-app-0-0-5/parkenapp005.webp

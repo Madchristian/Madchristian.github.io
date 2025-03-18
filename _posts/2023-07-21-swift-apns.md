@@ -2,7 +2,7 @@
 layout: post
 title: "Apple Push Notification Service mit Quart und Python: Ein Leitfaden"
 date: 2023-07-21 22:47:44 +0000
-categories: ['Programming', 'iOS']
+categories: ['Programming', 'Python']
 tags: swift python apns
 image:
   path: https://images.cstrube.de/blog/images/swift-apns/swift-apns.webp

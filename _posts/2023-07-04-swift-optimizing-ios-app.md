@@ -1,7 +1,7 @@
 ---
 title: "Optimizing an iOS Application: Case Study of the Parkplatzmanager App"
 date: 2023-07-04 11:45:00 +0200
-categories: ['Programming', 'iOS']
+categories: ['Programming', 'Swift']
 tags: ['ios', 'networking', 'app optimization', location tracking, 'combine', 'swift']
 image:
   path: https://images.cstrube.de/uploads/original/c4/85/426ac01432c4f36c3efe6e42c7d7.webp

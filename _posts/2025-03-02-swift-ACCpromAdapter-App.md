@@ -2,8 +2,8 @@
 layout: post
 title: "ACCpromAdapter App – Monitoring und Analyse von Apple Content Cache Metriken"
 date: 2025-03-02 16:38:03 +0000
-categories: [Swift,Apple,macOS,Content,Cache,Prometheus,Grafana]
-tags: [Apple,macOS,Swift,Prometheus,Grafana,Monitoring]
+categories: [Swift,Apple,Cache,Prometheus,Grafana]
+tags: [monitoring]
 image:
   path: https://images.cstrube.de/blog/images/swift-ACCpromAdapter-App/0001-swift-ACCpromAdapter-App-79b055b2-5fc7-4710-bdbd-b0a008886c4d.webp
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAgMDAwMDBAcFBAQEBAkGBwUHCgkLCwoJCgoMDREODAwQDAoKDhQPEBESExMTCw4UFhQSFhESExL/2wBDAQMDAwQEBAgFBQgSDAoMEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhL/wAARCAALABQDAREAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAgFBgf/xAAkEAACAgIBBAIDAQAAAAAAAAABAgMEBREGABIhMRNhB0Fxkf/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBQQG/8QAJREAAgEDAwQCAwAAAAAAAAAAAQIRAAMhBAVREiIxQRNhgZHR/9oADAMBAAIRAxEAPwBOPx5wObkLyyVo61GukDzRz5KQQRsVGwgZvZbet+h7J6v9pkA1w+6bmmjROsFixAhQTE+/xW2YSHgvC8XUfmmawVbIySuZoVAtiWsyKyNCY9qJQQ66bwdg78ecGpsXHJ6Tj9Z/lDt+8Ev2actH1A4zPGDVI5FyLjOcykl7G1RVqT+YIplX5AmyF7u0a7ta3rp+jsMtkBzJrfqrjm6Sojxgcxmlul5Tl8iCl/I2rIkUBvlk7zofrZ9D66YltFwoir91i4ljPupPFXJqkqSVnMToCqsoAKgjyB/dn/eiGPFTr1tXBDCRRT5O1F2pFYkRFXSqp0AProuo80r4kOSK/9k=
