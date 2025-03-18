@@ -2,7 +2,7 @@
 title: mDNS mit VLAN nutzen (z.B. Raspberry Pi)
 date: 2022-07-31 15:00:00
 categories: [Homelab]
-tags: [servers, pi, mdns, vlan, avahi, raspberry]
+tags: [pi, mdns, vlan, avahi, raspberry]
 ---
 
 ## Einleitung

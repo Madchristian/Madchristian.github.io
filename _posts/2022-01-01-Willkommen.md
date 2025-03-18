@@ -3,7 +3,7 @@ layout: post
 title: "Technologie, Automatisierung und Künstliche Intelligenz – Der Blog von Christian Strube"
 date: 2022-01-01 00:00:00 +0000
 categories: Technologie
-tags: gpt-4, künstliche intelligenz, technologie, automation, devops, swift, python, docker, self-hosting, networking, macos, monitoring
+tags: gpt-4, künstliche intelligenz, technologie, devops, self-hosting, macos, monitoring
 ---
 
 Willkommen auf dem Blog von Christian Strube, einem Ort, an dem Sie sich auf eine faszinierende Reise durch die Welt der Technologie und der Künstlichen Intelligenz (KI) begeben können. Hier finden Sie spannende Beiträge zu den Themen Technologie, Automatisierung und die neuesten Entwicklungen im Bereich der KI.
