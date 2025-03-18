@@ -89,7 +89,7 @@ avatar: https://images.cstrube.de/blog/images/mein-avatar/christian_space.webp
 toc: true
 
 comments:
-  active: giscus  # Setze Giscus als aktives Kommentar-System
+  active: "giscus"  # Setze Giscus als aktives Kommentar-System
   giscus:
     repo: madchristian/madchristian.github.io
     repo_id: R_kgDOHkSiUQ
