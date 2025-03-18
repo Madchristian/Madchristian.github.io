@@ -238,9 +238,7 @@ That’s it! You now have a fully functional monitoring stack to visualize metri
 
 In this guide, we demonstrated how to set up a monitoring solution for the Apple Content Cache using Grafana and Prometheus. We covered installation, configuration, and troubleshooting steps.
 
-You can fine-tune the monitoring stack by adding more metrics, alerts, and visualizations to suit your needs.
-
-We welcome your feedback and invite you to join the discussion. For more detailed insights, check out our [Prometheus/Grafana Blogpost](/2025-xx-prometheus-grafana-guide). Stay tuned for future updates and improvements!
+You can fine-tune the monitoring stack by adding more metrics, alerts, and visualizations to suit your needs. This setup provides real-time insights into the performance of the Apple Content Cache, helping you optimize network bandwidth, identify bottlenecks, and ensure efficient content delivery.
 
 More Pictures:
 ![0002-Apple-Content-Cache-Grafana-Dashboard-6bc2b61b-a16f-4099-ad32-0f5d4ff8ac83.jpg!](https://images.cstrube.de/blog/images/Apple-Content-Cache-Grafana-Dashboard/0002-Apple-Content-Cache-Grafana-Dashboard-6bc2b61b-a16f-4099-ad32-0f5d4ff8ac83.webp){: w="800" h="600" lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAkACQAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQFCf/EACEQAAICAQIHAAAAAAAAAAAAAAECAAMEMUEREhMhI2Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECBP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AyRvxarM/n6BclRxKEHb3KxsdC58L67UpETXiEsJWtaKqVgBRrj9/kREQj//Z" }
