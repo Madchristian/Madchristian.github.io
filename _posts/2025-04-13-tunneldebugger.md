@@ -1,0 +1,96 @@
+---
+layout: post
+title: "TunnelDebugger Support"
+date: 2025-04-13 07:51:16 +0000
+categories: [Apple,Apps,Swift]
+tags: [iOS,VPN Debugging]
+image:
+  path: https://images.cstrube.de/blog/images/tunneldebugger/0003-tunneldebugger-9426e5f2-4636-4c60-91a9-d132d1f5865b.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABQDASEAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAkFCgcIC//EACEQAAEFAQEBAAMBAQAAAAAAAAUCAwQGBwgBCQASExQV/8QAFwEAAwEAAAAAAAAAAAAAAAAABAUGA//EACERAAICAgMAAwEBAAAAAAAAAAECAwQFEQASIQYTIjFB/9oADAMBAAIRAxEAPwC4vieScjfOvnbMscpkHM8PyqpBwtYBNzfAgWZbLC0KZWRJzHnUpMXi/WR1iWdOTFf9awFZLkudJUpltS28F2XsbXjlE2i05Fg+R2yJlczwRIPxtqqltRAmFRNestamEKyMFiVy3idTtIM14DcPhXESZixjpNpUN6S5YfEPj+LztqVcvk7eNq15MeXerjZb32xW8jWx7/ZMjBKQE1utCksiS7ksArG/1sjy/wAnzWRw9aNsZj62QsTpdCJYvx0+ktanLdQJE6M9omGvYlaKN4iEgPaRA4dV17r8TuAfpkToPYu8YSOz3WNSzMDLtsbIrHPrtftTjBewrD3gq2ASEbI2Kx1+SJdlTSkaSdijGBIIsTJSQ3sx0/J/LVIsflMlQgleeGlfuVIppEEUk0VaxJDHLJGCwjeRUDsgYhWJUE647xtqS7jsfcljSKW3Sq2pYo3MiRyWII5XjRyFLojOVVyoLAAkDeua9ffvd+saEGHjeQz+lQdxvWyZxgIUhiMEwQ2cBkgjngj0BcQebSKpGmW2nqv93Jg5+l2esoHGTVao1SBTjDIQf6wuB+YPQXRWvcIXqB1vbrJO1+KP6lwm6xNtkk6lbbfOzO48kk8jc1hgx4HNS78Nh7paqS7cJsaJbLFUH66k6VJOBBpNp98dATIYNoy4mfM4ruIf1K0YvVmUCP0OBJGkqI46GZQ2v6eKc5+qGXDqhjTF5AqZT1jVzTlViX8Kbjdo3ZCG+piAf85YowefEJ4FhsqOZSY88zEDEkE3JI5ciWQHPzx5RU70Y/JHJJtE4stgqzBkyIkYk1KjMPuoZ8cUfifOK6ZvMKUMZXKZBTGvfqhFuYFB3AbS66jsA2h6Ad8PxDK2Jxbb+ztjqJ7kx7cGrEQx6sV2w9PUlffySNHiY/hlq4P6LcFZ10N1rz9zHqW5RFP5qf1UziFUn3a+j85YZpASwXg4ZbLSitomAAg2MXmQ1DBkj2OlMURBjpRHQ4ZXL/JX9fZPvIPKypP7eOf6VYJnSpP9EpbSlf8Ao9B/2/dKWGUJX+/7pQyyhPviWWvEALasqAq2J1VQAqiWQKABoAANoADwADQHnDzXgJJMMRJOyTGhJO97JK7J37v+795zp/sr9h+7Ma7/ANkwHnPSAXMeKYE/EzOhZhg1LA02noH+Pz7qRsZMTLYNNO2s8euRaQaID/Rg+UluH/IVHebfekn5iSWJZiWZiSzEkkknZJJ9JJ9JPpPNAAoCqAFAAAAAAAGgAB4AB4APAOf/2Q==
+---
+# tunneldebugger – Der umfassende Support-Leitfaden
+
+Willkommen auf unserem Support-Blog für tunneldebugger – die App zur Netzwerk- und VPN-Diagnose! In diesem Beitrag erfährst du, wie meine App funktioniert, welche Features dir zur Verfügung stehen und wie du typische Probleme lösen kannst. Ob du IT-Administrator oder Endnutzer bist – dieser Leitfaden bietet dir wertvolle Einblicke in die Funktionsweise und Bedienung von tunneldebugger.
+
+## Einführung
+
+In modernen Unternehmensnetzwerken werden VPN-Lösungen häufig eingesetzt – insbesondere im Rahmen von MDM-On-Demand-VPN-Konzepten. Um sicherzustellen, dass diese Verbindungen reibungslos funktionieren und eventuelle Verbindungsprobleme zeitnah behoben werden können, haben wir tunneldebugger entwickelt. Die App ermöglicht es, VPN-Verbindungen und Netzwerkpfade detailliert zu analysieren, indem sie – über verschiedene Netzwerktools – wichtige Kennzahlen wie Router-IP, Ping-Roundtrip-Time (RTT) oder HTTP-Erreichbarkeit ermittelt.
+
+## Funktionsweise
+
+### InfoTab
+
+WLAN- und Geräteinformationen
+-	WLAN-Daten:
+Mithilfe der CaptiveNetwork-APIs ermittelt tunneldebugger die aktuelle WLAN-SSID und BSSID. Diese Informationen sind hilfreich, um festzustellen, mit welchem Netzwerk dein Gerät gerade verbunden ist – besonders wichtig in Umgebungen, in denen mehrere Netzwerke aktiv sein können.
+	•	Geräteinformationen:
+Zusätzlich zeigt die App grundlegende Systeminformationen an, wie den Namen deines Geräts, den Systemnamen (z. B. iOS) und die aktuelle iOS-Version. Auch die lokale IP-Adresse wird angezeigt, sodass du sofort weißt, unter welcher IP dein Gerät im Netzwerk erreichbar ist.
+
+![0033-tunneldebugger-06f1d17e-23b6-45bf-bbc0-6116de8c2bb3.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0033-tunneldebugger-06f1d17e-23b6-45bf-bbc0-6116de8c2bb3.webp){: w="400" h="300" lqip="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAMAAABPe1hHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEX7+/36+v35+fv19ff29vj6+vy+vr+Pj5Dz8/Xw8PLy8vTX19ng4OL09PZSUlMHBwcGBgfm5ujU1NaysrTy8vP4+PrS0tOwsLGvr7H29vn9/f/////4+Pvz8/b5+fr7+/zp6euoqKmxsbLa2tv8/P709Pfj4+bi4uTe3uDs7O75+fzy8vfx8fbt7fLr6/Dq6u/09Pjw8PPx8fT39/r29/r29vr19fn29vfe3t7v7/Du9f/f7P/h7P/l7//3+f729vb+/v77/P74+v73+v75+/78/P319fXd3d3i4uL7+/v+/f3z8/fw8PXw8PTo6Ozo6O3n5+zp6e3y8vb39/nu7u/t7e7w8PH6+vv4+f3t8/3x9f3w9f3v9P35+vz08/j4+Pnp6enn5+fo6Onq6urp8f7q8f7s8/7s8//o8f/5+fnv7+/w8PDx8fHy8vL///7//v75+Pj39vb39/b19fj39/fo6Oj6+vr09PT9/f39/v7x9v7v9f7w9f/u9P75+v739/jn5+j8/Pz9/f78/f73+f3z8/j09Pnx8ffz8vbs7vfS4Pjt7/fu7vPb2+Dv7/Tk5Orp7PfA1fnq7ffp6e/NzdLk5Onc3OHs7PHw8ffx8vfh4eXS0tbR0dbg4OUd642SAAAAAWJLR0QbAmDUpAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kEDQgWMM4nSjQAAAGnSURBVCjPY2BgZGJmYWVlYwcCNlYGFg5OJgYg4OLmYeLl4xcQ4OfjZRIUEhYBijGyioqysoqJS0iIi7GysjJJsjLAgJQ0EEjBeDIssnIIOQZ5MKkgrKikrMKAClTV1DU0WbW0mGAAyGLQ1tHV1dPX19fVRgAGbQNDQyMg5DAGARNTE2NJbQYzcwtLaTiwsraxtTNgMJC3l3OAA0cnZxdXAwYzN3cPT2kk4AUU9Jbk4BVlQgIyxt4MOjo+EKCDAAzavn7+/gEBAYFB3lAAdJJBcEioZVi4KxBEREZFx0THxMYxGMQnJCYle4KsdkpJTUtLz3ACOikzKzsnNwcsmpeXX1BY5GnAUFxSWlqamFAGcWd+UXk5UNDAMyc7t0IaIlZZVV1TWwcUrE9qsGxsgoDm2tTU1BYDBu3WtjaDVhgwAAJvbQYdLIBBGwsYFSRKsD2oI6hdB8jSARHaYBZDUGdXd5B2T2+PtnafPlCor99HmyFowsRJQdqTp+gD+VN1tXX0pk0HqpwxoR2YmvWn+/hM15+u7TNdDyjYHhQUNFN71mwQmDMXYhEAr4euGZxwB0wAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDQtMTNUMDg6MjI6NDcrMDA6MDBHZGmEAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA0LTEzVDA4OjIyOjQ3KzAwOjAwNjnROAAAAABJRU5ErkJggg==" }
+
+
+### PortCheck
+
+1. Zielverwaltung:
+Jedes Ziel wird als Instanz von PortCheckTarget modelliert. Diese enthält:
+-	Hostname & Port: Die grundlegenden Parameter, die angeben, wohin die Verbindung aufgebaut werden soll.
+-	Statusinformationen: isReachable gibt an, ob eine Verbindung erfolgreich hergestellt werden konnte; errorMessage speichert Fehlermeldungen; resolvedIP enthält die über DNS ermittelte IP-Adresse; rtt misst die Round-Trip-Time, also die Zeit, die benötigt wird, um eine Antwort zu erhalten.
+-	Weitere Angaben: Angaben wie lastChecked (Zeitpunkt der letzten Überprüfung) und isChecking (ob aktuell eine Prüfung läuft) helfen, den Status kontinuierlich zu aktualisieren.
+2.	Asynchrone Überprüfung:
+Die PortCheckViewModel-Klasse koordiniert die Prüfung aller konfigurierten Ziele. Für jedes Ziel wird:
+-	Zunächst der Hostname in eine IP-Adresse aufgelöst (mithilfe einer asynchronen DNS-Auflösung).
+-	Anschließend wird versucht, über eine TCP-Verbindung (unter Nutzung des Network‑Frameworks) den Zielport zu erreichen.
+Der Verbindungsversuch startet eine Zeitmessung: Das gemessene Zeitintervall entspricht der RTT. Falls die Verbindung innerhalb einer bestimmten Zeit (z. B. 30 Sekunden) nicht hergestellt werden kann, wird das Ziel als nicht erreichbar markiert.
+3.	Ergebnisdarstellung:
+Die Resultate der Überprüfung (Erreichbarkeit, RTT, Fehlerdetails) werden in der Benutzeroberfläche in einer Tabelle (Form) angezeigt. Du findest dort separate Abschnitte für die konfigurierten Portziele, inklusive aller Statusinformationen und Messwerte.
+Außerdem sorgt ein Aktualisieren-Button dafür, dass der Benutzer den Test manuell neu starten kann.
+
+![0025-tunneldebugger-0994d1f4-c5d4-4621-8be2-0747071f2487.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0025-tunneldebugger-0994d1f4-c5d4-4621-8be2-0747071f2487.webp){: w="400" h="300" lqip="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAMAAABPe1hHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACJVBMVEX7+/36+v34+Pv19ff29vj6+vy+vr+Pj5Dz8/Xw8PL5+fvv7/HW1tja2tz4+Pr09PZSUlMHBwcGBgfm5ujU1Nazs7Ty8vP5+fzS0tOwsLGvr7H29vn9/f/////39/n7+/zn5+qtra6xsbO9vb7Hx8ivr7C0tLWsrK27u7zy8vT09Pfp6ezg4OLo6Ovr6+3i4uXh4ePe3+Hf3+Hg4OP19fjy8vfx8fbs7PHz8/j09Pjw8PPx8fT39/r8/Pz39/j39/f9/f78/f39/f3+/v74+vz29vf//v78/P36+/vi4+Xn7/7l7v7g6/7j7v76/P/z8/f19vv09vvz9fvw8PXp6e7q6u7o6Ozr6+/18/n08/jz8vf4+Pnw8PHv7/Dt7e76+vv6/PvB68Td8uH5+fnr6+vo6Ojq6ur7+/v8/fy15rXV8Nj8/P719fXz8/Ty8vL09PTC7MPe8+Hs7Ozt7e3w8PC257bW8NnA68Hd8+Dv7+/4+Pi36LjX8drx8fH29va96r/b8t/u7u666LrY8du76r3a8t76+vrs6+zp6eno6Ons7O276bzZ8935+fr/+vv7z9D88/P09fnu7u/q6uv09PX8+Pn41NX68vTz9Pjz9Pny8/fx8ffy8vb08/bv7/Tj4+jp7fe+1fnq7ffq6u/k5Ort7fLa2uDu7vPg6PefxPri6Pfk5Onr6/Dc3OHo7Pbk6PXo6/Xa2d7Ew8fExMfDw8fDw8jZ2d2KTO6pAAAAAWJLR0Qd6wNxkQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kEDQgTGfHiJh0AAAH1SURBVCjPY2BgZGJmYWVlYwcCNlYGFg5OLgYg4Obh5eMXEBQSEhTg5xIWERUDijGK8/GxskpISklJSrCysnJJs4JUMoIIGVkgkGGAAj5OPjkWbjkuFi6wCnmwoIKikrKKqqqauoYmAxxoaevo6ukbGBoZm3CBgTgXF4Opmbm5uakFEJjCAYOppZW1tbQNEpA2ZbC0tbO3t5VFAg6WDJaOtra2Ts5IwAko6OJq64Ys5gxS6e7h6ODggKbSztPL28fXD8VMfznmgMCgICYEsPFnMDMLBgIzFMBgGhwSGhZu6g8DEZFRQHdGx8TGxsW7Q0FCYhJjJINlckpqWlo6zOqMzKxsoO3xObl5YvlwwYJCkGBybFFxSR5csLQMrDI/L68kGS5YXgFWGVNcWVkFF6yugaisjamsgwvWN4BV1jY2VtrLykIFm5rBKvNqK4sri0uggi2tIMG2yvaOzq6uWkhAZXT3gAR7i4srU+pg2p37+idMBHqzq2vS5Ckwb7pPnTZ9BoOpv6WlhaUFPED8Z84yZTDDAhhMsYABFjQDEmaz58ydMxvEMgVzGUznzZ9nOmfBwkVzTOctBgrNWxIM1L502XLTOStWrgIKrl5qarZmrTlQpdlSM9PZ69ZvmDfPPMTcNNh8DVAQbJLpxk2bt2zZumUbxCIAFj/ZDx4g6ToAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDQtMTNUMDg6MTk6MjUrMDA6MDB3luzcAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA0LTEzVDA4OjE5OjI1KzAwOjAwBstUYAAAAABJRU5ErkJggg==" }
+
+### TracerouteTab
+
+Die Traceroute in tunneldebugger bietet eine umfassende Ansicht, mit der Netzwerkadministratoren und technisch interessierte Anwender den Weg von ICMP-Paketen durch ihr Netzwerk visualisieren können.
+-	Der obere Bereich erlaubt eine schnelle Eingabe des gewünschten Ziels und das Starten bzw. Stoppen des Traceroute-Vorgangs.
+-	Die Ergebnisse werden Zeile für Zeile angezeigt, wobei jede Zeile interaktiv ist – so können Benutzer direkt auf einen Hop tippen, um weitere Aktionen (z. B. Kopieren der IP, Whois-Abfrage) durchzuführen.
+-	Der gesamte Prozess ist asynchron aufgebaut, sodass Änderungen in Echtzeit in der UI erscheinen.
+
+Dieser Aufbau unterstützt nicht nur die Diagnose von Netzwerkpfaden, sondern ermöglicht auch eine intuitive Interaktion mit den einzelnen Netzwerkknoten – was bei der Fehlersuche in VPN- oder lokalen Netzwerken äußerst hilfreich sein kann.
+
+![0027-tunneldebugger-cac3c08d-5638-49d4-add4-36e90f7e44cf.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0027-tunneldebugger-cac3c08d-5638-49d4-add4-36e90f7e44cf.webp){: w="400" h="300" lqip="data:image/jpeg;base64,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" }
+
+
+### Einstellungen Tab
+Der Einstellungen-Tab in tunneldebugger bietet dir auf einen Blick alle wichtigen Berechtigungs- und Debug-Einstellungen – von der Standortfreigabe über den lokalen Netzwerkzugriff bis hin zur Log-Steuerung. Er ermöglicht es, systematisch zu überprüfen, ob alle Berechtigungen erteilt sind, und bietet die Möglichkeit, den Detailgrad der Logausgaben (also den Debug-Modus) zu steuern. Hier ein Überblick:
+
+Einstellungen Tab
+-	Berechtigungsstatus:
+Der Tab zeigt den aktuellen Standortberechtigungsstatus mithilfe einer lesbaren Beschreibung an (z. B. „Nur bei Nutzung erlaubt“ oder „Verweigert“). Das geschieht über die computed Property locationStatusDescription, die den internen CLAuthorizationStatus in einen verständlichen Text übersetzt.
+-	Lokaler Netzwerkzugriff:
+Zusätzlich wird angezeigt, ob der Zugriff auf das lokale Netzwerk erlaubt wurde – dies geschieht typischerweise über einen Test (z. B. mit einem UDP-Test). Ist der Test erfolgreich, erscheint ein grünes Symbol (wie zum Beispiel ein „wifi“-Icon), andernfalls ein rotes Symbol.
+-	Debug-Logs aktiv:
+Ein Toggle ermöglicht es, den Detailgrad der Log-Ausgaben zu steuern. Wenn der Toggle aktiviert ist, werden Debug- und Trace-Nachrichten zusätzlich ausgegeben – ideal, wenn du in einer Test- oder Support-Situation möglichst viele Details sehen möchtest. Diese Einstellung wird in den UserDefaults gespeichert, sodass sie über App-Neustarts hinweg erhalten bleibt.
+-	Log Export Funktion:
+Die Log-Export-Funktion (die in der Settings-View über einen extra Button – “Logs exportieren” – erreichbar ist) sammelt alle Log-Meldungen, die im DebugLogger und möglicherweise im LogManager protokolliert werden. Diese Logs werden formatiert zusammengefasst, sodass du sie anschließend über ein Share-Sheet (z. B. mit UIActivityViewController) exportieren und zum Beispiel per E-Mail an den Support senden kannst.
+	-	Vorteile:
+	-	Du erhältst eine komplette Übersicht aller Debug- und Netzwerk-Events, die in der App auftreten – etwa Verbindungsversuche, Berechtigungsanfragen, Eventualitäten wie „UDP connect() fehlgeschlagen“ und weitere Meldungen.
+	-	Dies ist besonders nützlich, wenn du bei einem Problem Unterstützung benötigst oder wenn du selbst systematisch Fehler analysieren möchtest.
+
+![0035-tunneldebugger-7d7dc954-6c03-472c-a4a5-c715d4059e2b.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0035-tunneldebugger-7d7dc954-6c03-472c-a4a5-c715d4059e2b.webp){: w="400" h="300" lqip="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAMAAABPe1hHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACK1BMVEX7+/36+v35+fv19ff29vj6+vy+vr+Pj5Dz8/Xw8PLy8vTX19ng4OL09PZSUlMHBwcGBgbm5ujU1NaysrTy8vP4+PrS0tOwsLGvr7D29vn9/f/////v7/H39/n7+/ysrK2zs7Stra6jo6Sqqquurq/Ozs/z8/bh4ePi4uXf3+Hd3d/e3uDLy83q6u34+Pv5+fzy8vfx8fbr6/Ds7PH09Pnz8/j09Pfv7/Lw8PPx8fT19fj39/r19fn29vbi4uLi4+Pq6ur+/v76+vr19fXx8fLv7+/v7/Dx8fH09Pj8/Pz39/f5+fn9/f37+/v6+vv7+vr4+Pjj4+Pg4ODm5ubk5OT//v7/5eT99vf7/Pz3+Pj39/j5+fr4+Pn29vf4+fn++vr9/Pz19Pj1+P7h7P/k7v/g6//j7f/o8P/e6//u9f/9/v7z8/f29/r09fv09vvz9fvy9Pvx9Pv19/vx8ffw8PXx8PXy8fbw8PTo6Ozp6e7q6u/p6e3x8fXx8vbt7e7w8PH8/P3w+fSe4rDW8d30+fbo6Ojo5+ft7Ozp6ejs7Ozw+vKQ36XU8dv0+vX7/P7z9//y9v/w9v/3+v/7/fz6/fv3+f3n8P7p8P7n7/7o8P7y9v79/f7v7/Tw8Pby8vXu7u719fbl5uby8vbz8vbj4+ju7vPb2+Ds7/fW4fjt7/ft7fLa2uDp6e/NzdLk5Onk6ffE1/nm6vfw8Pfn6/fl6ffw8ffh4eXS0tbg4OWPBUWGAAAAAWJLR0QbAmDUpAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kEDQgWN1BD35cAAAIeSURBVCjP1dD5VxJRFAfwx+CYWbiUI46k2R5W9J6EoejYUNkDhqKkzbAiy5YpsoYWpgWtsD2z1cq2KVtotf3P684Ac/yhf6DPD/ecd899777zRcjCWItYtngKKGZRUclUBoHSadMZW1l5RUV5mY2pnDGzCnoWluNYttpeU2OvZlmW4Vl90qKXWgeoRXncLJ6rK+EYoB/rjWbl7Ab7nLn2hnnzFyDTwkWLnU5n45Kljctc+jizHK5g0uQGZIXHgwsQbl7pbfF6W3063igYtbULHatEh8G/es3aznV+imggGAxJkiQGJFEKhNeHNwSgGdm4qUuIRgUhJIpwY/OWrdDctr17RywW69kpiYZduymK7+ndu6+vd3/fgYO5hx2HKJIPH0kc7e9PJI4dd+X4ZKSQZPJEkhBykpgQPnU6pZ45S+Ucj+ccfJ52n09XpTvT9QOGwQsXL+lfygxdHrpyNb/72vUbN+OI3hoevj0yckfMu3tPgsn7Dx6OPhp9/MQ0QBGWKY3HKfWYZEhpTE2lmp6SyRBuLW3xPqvzmXiIjgaFTLTL7ygQn7fr0b2IREJSYbkohcIUtfV0vBQyAXMyGI1AIHyz1WblXAU+Ky8jQrCClUmrsb79H/6bJoFCzIIV7ZWmQMivxzAefzOOIW6Ctbfv3msIZz/A+eMnFZqfs1j58nUCJkkWMsiq7mTSrbq1b99/TPw03sT412/DH6zp/gLGONWDCISaLgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNS0wNC0xM1QwODoyMjo1NSswMDowMBxReDMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjUtMDQtMTNUMDg6MjI6NTUrMDA6MDBtDMCPAAAAAElFTkSuQmCC" }
+
+
+## Architektur und Funktionsweise
+
+tunneldebugger ist nach dem Model-View-ViewModel (MVVM)-Prinzip aufgebaut:
+	•	Model/Service:
+Hier befinden sich alle Klassen, die mit der Netzwerkdiagnose zu tun haben. Beispielsweise steuert der TracerouteManager das Versenden von ICMP-Paketen und verarbeitet die Antworten, während der LocalNetworkManager für die Anfrage von Netzwerkberechtigungen und UDP-Tests zuständig ist.
+	•	ViewModel:
+Das InfoViewModel konsolidiert die von den Service-Klassen ermittelten Daten – z. B. Router-IP, Hostname, RTT und WLAN-Daten – und stellt sie als Published‑Eigenschaften zur Verfügung. Änderungen werden automatisch an die Views weitergegeben.
+	•	View:
+Die Benutzeroberfläche (z. B. InfoTabView und SettingsTabView) ist so gestaltet, dass sie in einem klassischen Formular (Form) oder in Tabellenübersichten alle relevanten Informationen anzeigt. Die Views sind von der Geschäftslogik entkoppelt, wodurch das Testen und Warten der App wesentlich vereinfacht wird.
+
+---
+## Fazit
+
+tunneldebugger bietet dir als IT-Administrator oder technikaffinem Endnutzer ein leistungsfähiges Werkzeug zur Überwachung und Diagnose von VPN- und Netzwerkverbindungen. Dank der MVVM-Architektur ist die App modular und gut testbar, und die Kombination aus Traceroute-, heuristischer und direkter WLAN-Informationsabfrage sorgt dafür, dass du auch in komplexen Netzwerkumgebungen stets die relevanten Informationen zur Hand hast.
+
+Wir hoffen, dass dir dieser Leitfaden dabei hilft, die App noch besser zu verstehen und effektiv einzusetzen. Falls du weitere Fragen hast oder Unterstützung benötigst, freuen wir uns über dein Feedback in den Kommentaren.

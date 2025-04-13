@@ -45,6 +45,11 @@ By the end of this guide, you’ll have a fully functional monitoring solution t
 
 - [Download](https://download.cstrube.de/api/public/dl/lo8Zsw0V/FastStorage/public/ACCpromAdapterDaemon/releases/ACCpromAdapterDaemon.pkg) the .pkg file and save it to your Mac.
 - Double-click the .pkg file to start the installation process (you need admin privileges because the daemon will launch after boot).
+- Execute the following commands to load and start the daemon:
+  ```bash
+  sudo launchctl load /Library/LaunchDaemons/de.cstrube.accpromadapterdaemon.plist
+  sudo launchctl start de.cstrube.accpromadapterdaemon
+  ```
 - This will install the ACCpromAdapterDaemon on your Mac. This daemon will collect metrics from the Apple Content Cache and expose them to Prometheus over HTTP Port 9200.
 
 ### 2. Set Up the Prometheus + Grafana Stack with Docker Compose on your Linux Server
