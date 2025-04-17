@@ -23,7 +23,7 @@ In modernen Unternehmensnetzwerken werden VPN-Lösungen häufig eingesetzt – i
 WLAN- und Geräteinformationen
 -	WLAN-Daten:
 Mithilfe der CaptiveNetwork-APIs ermittelt tunneldebugger die aktuelle WLAN-SSID und BSSID. Diese Informationen sind hilfreich, um festzustellen, mit welchem Netzwerk dein Gerät gerade verbunden ist – besonders wichtig in Umgebungen, in denen mehrere Netzwerke aktiv sein können.
-	•	Geräteinformationen:
+-	Geräteinformationen:
 Zusätzlich zeigt die App grundlegende Systeminformationen an, wie den Namen deines Geräts, den Systemnamen (z. B. iOS) und die aktuelle iOS-Version. Auch die lokale IP-Adresse wird angezeigt, sodass du sofort weißt, unter welcher IP dein Gerät im Netzwerk erreichbar ist.
 
 ![0033-tunneldebugger-06f1d17e-23b6-45bf-bbc0-6116de8c2bb3.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0033-tunneldebugger-06f1d17e-23b6-45bf-bbc0-6116de8c2bb3.webp){: w="400" h="300" lqip="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAMAAABPe1hHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEX7+/36+v35+fv19ff29vj6+vy+vr+Pj5Dz8/Xw8PLy8vTX19ng4OL09PZSUlMHBwcGBgfm5ujU1NaysrTy8vP4+PrS0tOwsLGvr7H29vn9/f/////4+Pvz8/b5+fr7+/zp6euoqKmxsbLa2tv8/P709Pfj4+bi4uTe3uDs7O75+fzy8vfx8fbt7fLr6/Dq6u/09Pjw8PPx8fT39/r29/r29vr19fn29vfe3t7v7/Du9f/f7P/h7P/l7//3+f729vb+/v77/P74+v73+v75+/78/P319fXd3d3i4uL7+/v+/f3z8/fw8PXw8PTo6Ozo6O3n5+zp6e3y8vb39/nu7u/t7e7w8PH6+vv4+f3t8/3x9f3w9f3v9P35+vz08/j4+Pnp6enn5+fo6Onq6urp8f7q8f7s8/7s8//o8f/5+fnv7+/w8PDx8fHy8vL///7//v75+Pj39vb39/b19fj39/fo6Oj6+vr09PT9/f39/v7x9v7v9f7w9f/u9P75+v739/jn5+j8/Pz9/f78/f73+f3z8/j09Pnx8ffz8vbs7vfS4Pjt7/fu7vPb2+Dv7/Tk5Orp7PfA1fnq7ffp6e/NzdLk5Onc3OHs7PHw8ffx8vfh4eXS0tbR0dbg4OUd642SAAAAAWJLR0QbAmDUpAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kEDQgWMM4nSjQAAAGnSURBVCjPY2BgZGJmYWVlYwcCNlYGFg5OJgYg4OLmYeLl4xcQ4OfjZRIUEhYBijGyioqysoqJS0iIi7GysjJJsjLAgJQ0EEjBeDIssnIIOQZ5MKkgrKikrMKAClTV1DU0WbW0mGAAyGLQ1tHV1dPX19fVRgAGbQNDQyMg5DAGARNTE2NJbQYzcwtLaTiwsraxtTNgMJC3l3OAA0cnZxdXAwYzN3cPT2kk4AUU9Jbk4BVlQgIyxt4MOjo+EKCDAAzavn7+/gEBAYFB3lAAdJJBcEioZVi4KxBEREZFx0THxMYxGMQnJCYle4KsdkpJTUtLz3ACOikzKzsnNwcsmpeXX1BY5GnAUFxSWlqamFAGcWd+UXk5UNDAMyc7t0IaIlZZVV1TWwcUrE9qsGxsgoDm2tTU1BYDBu3WtjaDVhgwAAJvbQYdLIBBGwsYFSRKsD2oI6hdB8jSARHaYBZDUGdXd5B2T2+PtnafPlCor99HmyFowsRJQdqTp+gD+VN1tXX0pk0HqpwxoR2YmvWn+/hM15+u7TNdDyjYHhQUNFN71mwQmDMXYhEAr4euGZxwB0wAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDQtMTNUMDg6MjI6NDcrMDA6MDBHZGmEAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA0LTEzVDA4OjIyOjQ3KzAwOjAwNjnROAAAAABJRU5ErkJggg==" }
@@ -33,17 +33,16 @@ Zusätzlich zeigt die App grundlegende Systeminformationen an, wie den Namen dei
 
 1. Zielverwaltung:
 Jedes Ziel wird als Instanz von PortCheckTarget modelliert. Diese enthält:
--	Hostname & Port: Die grundlegenden Parameter, die angeben, wohin die Verbindung aufgebaut werden soll.
--	Statusinformationen: isReachable gibt an, ob eine Verbindung erfolgreich hergestellt werden konnte; errorMessage speichert Fehlermeldungen; resolvedIP enthält die über DNS ermittelte IP-Adresse; rtt misst die Round-Trip-Time, also die Zeit, die benötigt wird, um eine Antwort zu erhalten.
--	Weitere Angaben: Angaben wie lastChecked (Zeitpunkt der letzten Überprüfung) und isChecking (ob aktuell eine Prüfung läuft) helfen, den Status kontinuierlich zu aktualisieren.
+	-	Hostname & Port: Die grundlegenden Parameter, die angeben, wohin die Verbindung aufgebaut werden soll.
+	-	Statusinformationen: isReachable gibt an, ob eine Verbindung erfolgreich hergestellt werden konnte; errorMessage speichert Fehlermeldungen; resolvedIP enthält die über DNS ermittelte IP-Adresse; rtt misst die Round-Trip-Time, also die Zeit, die benötigt wird, um eine Antwort zu erhalten.
+	-	Weitere Angaben: Angaben wie lastChecked (Zeitpunkt der letzten Überprüfung) und isChecking (ob aktuell eine Prüfung läuft) helfen, den Status kontinuierlich zu aktualisieren.
 2.	Asynchrone Überprüfung:
 Die PortCheckViewModel-Klasse koordiniert die Prüfung aller konfigurierten Ziele. Für jedes Ziel wird:
--	Zunächst der Hostname in eine IP-Adresse aufgelöst (mithilfe einer asynchronen DNS-Auflösung).
--	Anschließend wird versucht, über eine TCP-Verbindung (unter Nutzung des Network‑Frameworks) den Zielport zu erreichen.
-Der Verbindungsversuch startet eine Zeitmessung: Das gemessene Zeitintervall entspricht der RTT. Falls die Verbindung innerhalb einer bestimmten Zeit (z. B. 30 Sekunden) nicht hergestellt werden kann, wird das Ziel als nicht erreichbar markiert.
+	-	Zunächst der Hostname in eine IP-Adresse aufgelöst (mithilfe einer asynchronen DNS-Auflösung).
+	-	Anschließend wird versucht, über eine TCP-Verbindung (unter Nutzung des Network‑Frameworks) den Zielport zu erreichen. Der Verbindungsversuch startet eine Zeitmessung: Das gemessene Zeitintervall entspricht der RTT. Falls die Verbindung innerhalb einer bestimmten Zeit (z. B. 30 Sekunden) nicht hergestellt werden kann, wird das Ziel als nicht erreichbar markiert.
 3.	Ergebnisdarstellung:
 Die Resultate der Überprüfung (Erreichbarkeit, RTT, Fehlerdetails) werden in der Benutzeroberfläche in einer Tabelle (Form) angezeigt. Du findest dort separate Abschnitte für die konfigurierten Portziele, inklusive aller Statusinformationen und Messwerte.
-Außerdem sorgt ein Aktualisieren-Button dafür, dass der Benutzer den Test manuell neu starten kann.
+	- Außerdem sorgt ein pull-to-refresh dafür, dass der Benutzer den Test manuell neu starten kann.
 
 ![0025-tunneldebugger-0994d1f4-c5d4-4621-8be2-0747071f2487.jpg!](https://images.cstrube.de/blog/images/tunneldebugger/0025-tunneldebugger-0994d1f4-c5d4-4621-8be2-0747071f2487.webp){: w="400" h="300" lqip="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAMAAABPe1hHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACJVBMVEX7+/36+v34+Pv19ff29vj6+vy+vr+Pj5Dz8/Xw8PL5+fvv7/HW1tja2tz4+Pr09PZSUlMHBwcGBgfm5ujU1Nazs7Ty8vP5+fzS0tOwsLGvr7H29vn9/f/////39/n7+/zn5+qtra6xsbO9vb7Hx8ivr7C0tLWsrK27u7zy8vT09Pfp6ezg4OLo6Ovr6+3i4uXh4ePe3+Hf3+Hg4OP19fjy8vfx8fbs7PHz8/j09Pjw8PPx8fT39/r8/Pz39/j39/f9/f78/f39/f3+/v74+vz29vf//v78/P36+/vi4+Xn7/7l7v7g6/7j7v76/P/z8/f19vv09vvz9fvw8PXp6e7q6u7o6Ozr6+/18/n08/jz8vf4+Pnw8PHv7/Dt7e76+vv6/PvB68Td8uH5+fnr6+vo6Ojq6ur7+/v8/fy15rXV8Nj8/P719fXz8/Ty8vL09PTC7MPe8+Hs7Ozt7e3w8PC257bW8NnA68Hd8+Dv7+/4+Pi36LjX8drx8fH29va96r/b8t/u7u666LrY8du76r3a8t76+vrs6+zp6eno6Ons7O276bzZ8935+fr/+vv7z9D88/P09fnu7u/q6uv09PX8+Pn41NX68vTz9Pjz9Pny8/fx8ffy8vb08/bv7/Tj4+jp7fe+1fnq7ffq6u/k5Ort7fLa2uDu7vPg6PefxPri6Pfk5Onr6/Dc3OHo7Pbk6PXo6/Xa2d7Ew8fExMfDw8fDw8jZ2d2KTO6pAAAAAWJLR0Qd6wNxkQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kEDQgTGfHiJh0AAAH1SURBVCjPY2BgZGJmYWVlYwcCNlYGFg5OLgYg4Obh5eMXEBQSEhTg5xIWERUDijGK8/GxskpISklJSrCysnJJs4JUMoIIGVkgkGGAAj5OPjkWbjkuFi6wCnmwoIKikrKKqqqauoYmAxxoaevo6ukbGBoZm3CBgTgXF4Opmbm5uakFEJjCAYOppZW1tbQNEpA2ZbC0tbO3t5VFAg6WDJaOtra2Ts5IwAko6OJq64Ys5gxS6e7h6ODggKbSztPL28fXD8VMfznmgMCgICYEsPFnMDMLBgIzFMBgGhwSGhZu6g8DEZFRQHdGx8TGxsW7Q0FCYhJjJINlckpqWlo6zOqMzKxsoO3xObl5YvlwwYJCkGBybFFxSR5csLQMrDI/L68kGS5YXgFWGVNcWVkFF6yugaisjamsgwvWN4BV1jY2VtrLykIFm5rBKvNqK4sri0uggi2tIMG2yvaOzq6uWkhAZXT3gAR7i4srU+pg2p37+idMBHqzq2vS5Ckwb7pPnTZ9BoOpv6WlhaUFPED8Z84yZTDDAhhMsYABFjQDEmaz58ydMxvEMgVzGUznzZ9nOmfBwkVzTOctBgrNWxIM1L502XLTOStWrgIKrl5qarZmrTlQpdlSM9PZ69ZvmDfPPMTcNNh8DVAQbJLpxk2bt2zZumUbxCIAFj/ZDx4g6ToAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjUtMDQtMTNUMDg6MTk6MjUrMDA6MDB3luzcAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI1LTA0LTEzVDA4OjE5OjI1KzAwOjAwBstUYAAAAABJRU5ErkJggg==" }
 
@@ -63,10 +62,8 @@ Dieser Aufbau unterstützt nicht nur die Diagnose von Netzwerkpfaden, sondern er
 Der Einstellungen-Tab in tunneldebugger bietet dir auf einen Blick alle wichtigen Berechtigungs- und Debug-Einstellungen – von der Standortfreigabe über den lokalen Netzwerkzugriff bis hin zur Log-Steuerung. Er ermöglicht es, systematisch zu überprüfen, ob alle Berechtigungen erteilt sind, und bietet die Möglichkeit, den Detailgrad der Logausgaben (also den Debug-Modus) zu steuern. Hier ein Überblick:
 
 Einstellungen Tab
--	Berechtigungsstatus:
-Der Tab zeigt den aktuellen Standortberechtigungsstatus mithilfe einer lesbaren Beschreibung an (z. B. „Nur bei Nutzung erlaubt“ oder „Verweigert“). Das geschieht über die computed Property locationStatusDescription, die den internen CLAuthorizationStatus in einen verständlichen Text übersetzt.
 -	Lokaler Netzwerkzugriff:
-Zusätzlich wird angezeigt, ob der Zugriff auf das lokale Netzwerk erlaubt wurde – dies geschieht typischerweise über einen Test (z. B. mit einem UDP-Test). Ist der Test erfolgreich, erscheint ein grünes Symbol (wie zum Beispiel ein „wifi“-Icon), andernfalls ein rotes Symbol.
+Es wird angezeigt, ob der Zugriff auf das lokale Netzwerk erlaubt wurde – dies geschieht typischerweise über einen Test (z. B. mit einem UDP-Test). Ist der Test erfolgreich, erscheint ein grünes Symbol (wie zum Beispiel ein „wifi“-Icon), andernfalls ein rotes Symbol. Falls der Zugriff auf das lokale Netzwerk nicht erlaubt ist, hiflt ein löschen der App und ein erneuter Installationsversuch. Dies ist besonders wichtig, da viele Netzwerk-Tools (wie UDP-Tests) auf den Zugriff auf das lokale Netzwerk angewiesen sind.
 -	Debug-Logs aktiv:
 Ein Toggle ermöglicht es, den Detailgrad der Log-Ausgaben zu steuern. Wenn der Toggle aktiviert ist, werden Debug- und Trace-Nachrichten zusätzlich ausgegeben – ideal, wenn du in einer Test- oder Support-Situation möglichst viele Details sehen möchtest. Diese Einstellung wird in den UserDefaults gespeichert, sodass sie über App-Neustarts hinweg erhalten bleibt.
 -	Log Export Funktion:
@@ -81,11 +78,11 @@ Die Log-Export-Funktion (die in der Settings-View über einen extra Button – �
 ## Architektur und Funktionsweise
 
 tunneldebugger ist nach dem Model-View-ViewModel (MVVM)-Prinzip aufgebaut:
-	•	Model/Service:
+-	Model/Service:
 Hier befinden sich alle Klassen, die mit der Netzwerkdiagnose zu tun haben. Beispielsweise steuert der TracerouteManager das Versenden von ICMP-Paketen und verarbeitet die Antworten, während der LocalNetworkManager für die Anfrage von Netzwerkberechtigungen und UDP-Tests zuständig ist.
-	•	ViewModel:
+-	ViewModel:
 Das InfoViewModel konsolidiert die von den Service-Klassen ermittelten Daten – z. B. Router-IP, Hostname, RTT und WLAN-Daten – und stellt sie als Published‑Eigenschaften zur Verfügung. Änderungen werden automatisch an die Views weitergegeben.
-	•	View:
+-	View:
 Die Benutzeroberfläche (z. B. InfoTabView und SettingsTabView) ist so gestaltet, dass sie in einem klassischen Formular (Form) oder in Tabellenübersichten alle relevanten Informationen anzeigt. Die Views sind von der Geschäftslogik entkoppelt, wodurch das Testen und Warten der App wesentlich vereinfacht wird.
 
 ---
